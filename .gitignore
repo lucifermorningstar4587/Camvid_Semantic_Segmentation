@@ -21,9 +21,9 @@ data/dataset/
 outputs/*checkpoints/
 outputs/**/checkpoints/
 
-# Duplicate notebooks & reference PDFs
+# Duplicate notebooks & reference paper
 *- Copy.ipynb
-*.pdf
+neurips2023_paper.pdf
 
 # OS generated files
 .DS_Store
