@@ -16,11 +16,11 @@ The pipeline directly integrates theoretical advancements from the NeurIPS 2023 
 
 Evaluated under strict zero-leakage conditions (11 classes + ignore void `255`, 233 native $720 \times 960$ test frames, multi-seed aggregation across Seeds `42, 123, 456`):
 
-| Model Paradigm | Backbone | Val mIoU (Peak) | Test mIoU (Mean ± Std) | Pixel Accuracy | Mean Dice / F1 | Mean Precision | Mean Recall | Boundary IoU |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Random Forest** | Handcrafted (Color/Texton) | 31.42% | 30.85% | 64.28% | 41.05% | 40.00% | 48.41% | 0.1142 |
-| **DeepLabV3+** | ResNet-101 (59.3M params) | 77.96% | 72.82 ± 0.35% | 93.68 ± 0.12% | 80.95 ± 0.28% | 81.36 ± 0.31% | 81.79 ± 0.40% | 0.3708 ± 0.0031 |
-| **SegFormer-B2** | MiT-B2 (24.7M params) | **81.78%** | **78.41 ± 0.28%** | **94.88 ± 0.08%** | **85.34 ± 0.22%** | **85.64 ± 0.25%** | **85.92 ± 0.32%** | **0.4356 ± 0.0024** |
+| Model Paradigm | Backbone | Test mIoU (Mean ± Std) | Pixel Accuracy | Mean Dice / F1 | Mean Precision | Mean Recall | Boundary IoU |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Random Forest** | Handcrafted (Color/Texton) | 30.85% | 64.28% | 41.05% | 40.00% | 48.41% | 0.1142 |
+| **DeepLabV3+** | ResNet-101 (59.3M params) | 72.82 ± 0.35% | 93.68 ± 0.12% | 80.95 ± 0.28% | 81.36 ± 0.31% | 81.79 ± 0.40% | 0.3708 ± 0.0031 |
+| **SegFormer-B2** | MiT-B2 (24.7M params) | **78.41 ± 0.28%** | **94.88 ± 0.08%** | **85.34 ± 0.22%** | **85.64 ± 0.25%** | **85.92 ± 0.32%** | **0.4356 ± 0.0024** |
 
 ---
 
