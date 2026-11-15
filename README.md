@@ -4,157 +4,216 @@
 ---
 
 ## 📌 Project Overview
-This repository contains a complete, rigorous, and modular machine learning framework for semantic segmentation on the **Cambridge-driving Labeled Video Database (CamVid)**. The pipeline directly incorporates theoretical advancements from the NeurIPS 2023 Datasets and Benchmarks paper:
+This repository contains a complete, rigorous, and modular machine learning framework for semantic segmentation on the **Cambridge-driving Labeled Video Database (CamVid)**. The research benchmarks a Classical Baseline (**Random Forest** with handcrafted texture/color/filter features) against a Dilated CNN (**DeepLabV3+ ResNet-101**, 59.3M params) and a Hierarchical Vision Transformer (**SegFormer-B2 MiT-B2**, 24.7M params).
+
+The pipeline directly integrates theoretical advancements from the NeurIPS 2023 Datasets and Benchmarks paper:
 > **"Revisiting Evaluation Metrics for Semantic Segmentation: Optimization and Evaluation of Fine-grained Intersection over Union"**  
 > *Zifu Wang, Maxim Berman, Amal Rannen-Triki, Philip Torr, Devis Tuia, Tinne Tuytelaars, Luc Van Gool, Jiaqian Yu, Matthew B. Blaschko (NeurIPS 2023)*
 
 ---
 
-## 🗂️ Complete Directory & Scripts Structure
+## 🏆 Key Benchmark Results (CamVid Official Test Set)
+
+Evaluated under strict zero-leakage conditions (11 classes + ignore void `255`, 233 native $720 \times 960$ test frames, multi-seed aggregation across Seeds `42, 123, 456`):
+
+| Model Paradigm | Backbone | Val mIoU (Peak) | Test mIoU (Mean ± Std) | Pixel Accuracy | Mean Dice / F1 | Mean Precision | Mean Recall | Boundary IoU |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Random Forest** | Handcrafted (Color/Texton) | 31.42% | 30.85% | 64.28% | 41.05% | 40.00% | 48.41% | 0.1142 |
+| **DeepLabV3+** | ResNet-101 (59.3M params) | 77.96% | 72.82 ± 0.35% | 93.68 ± 0.12% | 80.95 ± 0.28% | 81.36 ± 0.31% | 81.79 ± 0.40% | 0.3708 ± 0.0031 |
+| **SegFormer-B2** | MiT-B2 (24.7M params) | **81.78%** | **78.41 ± 0.28%** | **94.88 ± 0.08%** | **85.34 ± 0.22%** | **85.64 ± 0.25%** | **85.92 ± 0.32%** | **0.4356 ± 0.0024** |
+
+---
+
+## 🔬 Core Contributions & Methodological Highlights
+
+1. **Cityscapes 1:1 Semantic Ontology Transfer:**
+   * Direct ontological mapping of pre-trained Cityscapes representations to CamVid's 11 classes:  
+     `CAMVID_TO_CITYSCAPES = [10, 2, 5, 0, 1, 8, 7, 4, 13, 11, 18]`
+   * Solves cold-start instability and yields instant baseline transfer (+5.8% to +9.2% mIoU over standard ImageNet-1K).
+
+2. **Decoupled 5-Loss Function Ablation:**
+   * Independent benchmark across 5 distinct optimization objectives under identical $512 \times 512$ regimes:
+     * **Cross-Entropy (CE)**: Pixel-level distribution baseline
+     * **Lovász-Softmax**: Submodular convex surrogate IoU loss (Berman et al., CVPR 2018)
+     * **Multi-Class Dice**: Harmonic region overlap optimization
+     * **Focal Loss**: Hard-negative pixel mining (Lin et al., ICCV 2017)
+     * **Jaccard Metric Loss (JML)**: Soft surrogate direct mIoU optimization (Wang et al., NeurIPS 2023)
+
+3. **Goal-Driven Bayesian Loss Search Agent (Optuna TPE):**
+   * Automatically discovers the optimal balance for composite loss:  
+     $$\mathcal{L}_{\text{composite}} = \lambda_{\text{CE}} \cdot \mathcal{L}_{\text{CE}} + \lambda_{\text{JML}} \cdot \mathcal{L}_{\text{JML}}$$
+   * Discovered weights:
+     * **DeepLabV3+:** $\lambda_{\text{CE}}^* = 0.75, \ \lambda_{\text{JML}}^* = 0.95 \implies \mathbf{77.96\%}$ Val mIoU
+     * **SegFormer-B2:** $\lambda_{\text{CE}}^* = 0.65, \ \lambda_{\text{JML}}^* = 1.10 \implies \mathbf{81.78\%}$ Val mIoU
+   * Full trial logs saved in `outputs/new_logs/04_agent_trials.csv`.
+
+4. **Progressive Post-Processing Improvements Ladder:**
+   * **Stage 1 (Clean Baseline):** Standard full-frame inference at $512 \times 512$.
+   * **Stage 2 (Native Sliding Window):** Native $720 \times 960$ inference using $512 \times 512$ patches with 2D Gaussian apodization kernel weighting.
+   * **Stage 3 (Multi-Scale TTA):** Multi-scale evaluation pyramid ($[0.85\times, 1.0\times, 1.15\times]$) with horizontal flipping.
+   * **Stage 4 (Agent Prior Calibration):** Class prior temperature shifting ($\tau^* = 0.20$ for SegFormer, $\tau^* = 0.15$ for DeepLab) boosting minority classes (*Pedestrian*, *Bicyclist*, *SignSymbol*).
+
+---
+
+## 🗂️ Repository Directory Structure
+
 ```
-finalprojv3/
-├── CamVid_Semantic_Segmentation_Master.ipynb  # Self-contained all-in-one Google Colab notebook
-├── master_pipeline.py                         # Master orchestration script
-├── requirements.txt                           # Complete environment dependencies
-├── README.md                                  # Detailed system & experimental guide
+Camvid_Semantic_Segmentation/
+├── CamVid_Semantic_Segmentation_Master.ipynb  # Primary interactive notebook with complete pipeline
+├── README.md                                  # Comprehensive documentation & benchmark guide
+├── requirements.txt                           # Project dependencies
+├── .gitignore                                 # Git configuration excluding checkpoints & dataset
 │
-├── data/                                      # Data handling & augmentation
-│   ├── download_camvid.py                     # Automatic download & verification of official CamVid splits
-│   └── dataset.py                             # PyTorch Dataset, transforms, class weights & statistics
+├── data/                                      # Data pipeline
+│   ├── download_camvid.py                     # Automatic download & integrity check of CamVid
+│   └── dataset.py                             # PyTorch Dataset, Albumentations transforms & EDA stats
 │
 ├── models/                                    # Model implementations & profiling
-│   ├── baseline_rf.py                         # Traditional ML Random Forest Baseline (handcrafted features)
-│   ├── deeplabv3plus.py                       # DeepLabV3+ (ResNet-101 backbone; ImageNet & Cityscapes)
-│   ├── segformer.py                           # SegFormer-B2 (Mix Transformer mit-b2; ImageNet & Cityscapes)
-│   └── model_factory.py                       # Factory, parameter counter, GFLOPs & latency profiler
+│   ├── baseline_rf.py                         # Traditional Random Forest baseline (handcrafted features)
+│   ├── deeplabv3plus.py                       # DeepLabV3+ (ResNet-101 backbone)
+│   ├── segformer.py                           # SegFormer-B2 (Hierarchical MiT-B2 transformer)
+│   └── model_factory.py                       # Model factory and FLOPs/parameter profiler
 │
-├── losses/                                    # 5 Distinct Loss Functions & Composite Formulation
-│   ├── ce_loss.py                             # 1. Multi-class Cross-Entropy Loss
-│   ├── lovasz_loss.py                         # 2. Lovász-Softmax Loss (Berman et al., CVPR 2018)
-│   ├── dice_loss.py                           # 3. Multi-class Soft Dice Loss
-│   ├── focal_loss.py                          # 4. Multi-class Focal Loss (Lin et al., ICCV 2017)
-│   ├── jml_loss.py                            # 5. Jaccard Metric Loss (Wang et al., NeurIPS 2023)
-│   └── composite_loss.py                      # Composite Loss: lambda_ce * CE + lambda_jml * JML
+├── losses/                                    # 5 Decoupled Loss Functions
+│   ├── ce_loss.py                             # 1. Multi-Class Cross-Entropy Loss
+│   ├── lovasz_loss.py                         # 2. Lovász-Softmax Loss
+│   ├── dice_loss.py                           # 3. Multi-Class Soft Dice Loss
+│   ├── focal_loss.py                          # 4. Multi-Class Focal Loss
+│   ├── jml_loss.py                            # 5. Jaccard Metric Loss (NeurIPS 2023)
+│   └── composite_loss.py                      # Composite Loss (lambda_ce * CE + lambda_jml * JML)
 │
-├── agent/                                     # Goal-Driven Hyperparameter Optimization Agent
-│   └── loss_agent.py                          # Bayesian Optuna TPE Agent searching optimal loss weights
+├── agent/                                     # Goal-Driven Bayesian Search
+│   └── loss_agent.py                          # Optuna TPE Agent searching optimal loss weights
 │
-├── improvements/                              # 6 Beyond-Plain-Implementation Improvements
-│   ├── sliding_window.py                      # 1 & 2. Native 720×960 Sliding Window with Gaussian Blending
-│   ├── tta.py                                 # 3. Multi-Scale TTA Pyramid (scales [0.75, 1.0, 1.25] + flip)
-│   ├── calibration.py                         # 4. Class Prior Calibration & Temperature Scaling
-│   └── copy_paste.py                          # 5. Class-Aware Copy-Paste Augmentation (rare classes)
+├── improvements/                              # Advanced Inference Modules
+│   ├── sliding_window.py                      # 2D Gaussian-weighted sliding window inference
+│   ├── tta.py                                 # Multi-scale pyramid Test-Time Augmentation
+│   ├── calibration.py                         # Training class prior calibration & temperature shift
+│   └── copy_paste.py                          # Object-level Copy-Paste augmentation
 │
-├── utils/                                     # Metrics, Logging & Visualization
+├── utils/                                     # Evaluation & Logging Utilities
 │   ├── metrics.py                             # mIoU, Dice/F1, Precision, Recall, Pixel Acc, Boundary IoU
-│   ├── logger.py                              # Timestamped logger with stdout and persistent CSV/TXT flush
-│   ├── trainer.py                             # Standard training, validation & checkpointing loop
-│   └── visualization.py                       # Confusion matrix heatmap & class distribution plotting
+│   ├── logger.py                              # Timestamped logger with console and CSV/JSON flush
+│   ├── trainer.py                             # Robust training and validation loop
+│   └── visualization.py                       # Confusion matrices & class imbalance visualizers
 │
 ├── experiments/                               # Modular Execution Scripts
-│   ├── run_baseline_rf.py                     # Traditional Random Forest baseline execution
-│   ├── run_pretraining_ablation.py            # ImageNet vs Cityscapes transfer ablation
-│   ├── run_losses_ablation.py                 # 5 Losses ablation (CE, Lovasz, Dice, Focal, JML)
-│   ├── run_agent_composite.py                 # Agent search & composite model training
-│   ├── run_improvements_ablation.py           # 6 Improvements ablation across 3 seeds (42, 123, 456)
-│   └── run_final_test.py                      # Comprehensive test set evaluation (Mean ± Std)
+│   ├── run_baseline_rf.py                     # Random Forest baseline training & evaluation
+│   ├── run_pretraining_ablation.py            # ImageNet vs. Cityscapes domain transfer
+│   ├── run_losses_ablation.py                 # 5 Loss functions ablation (train & eval-only)
+│   ├── search_segformer.py                    # Optuna loss search agent for SegFormer-B2
+│   ├── search_deeplab.py                      # Optuna loss search agent for DeepLabV3+
+│   ├── search_calibration_threshold.py        # Goal-driven threshold search agent for prior shift tau*
+│   ├── train_semantic_transfer.py             # Unified production multi-seed training recipe
+│   ├── run_improvements_ablation.py           # Progressive ablation ladder (Stages 1-4, Val/Test)
+│   ├── run_final_test.py                      # Official multi-seed test benchmark
+│   └── cpy_pst/                               # Explored Copy-Paste augmentation scripts
 │
-└── outputs/                                   # Unified Output Directory
-    ├── checkpoints/                           # Saved .pth model weights (best validation mIoU)
-    ├── logs/                                  # Persistent trial histories, CSVs, and metrics summaries
-    └── plots/                                 # Generated figures, confusion matrices, and imbalance charts
+└── outputs/                                   # Verified Outputs & Deliverables
+    ├── Figures_and_Tables/                    # 14 publication-ready Markdown/CSV tables & Figures
+    │   ├── Figures/                           # Architecture diagrams, loss curves, confusion matrices
+    │   └── Tables/                            # Tables 00 to 13 (Ablation, Multi-seed, Per-class)
+    ├── new_logs/                              # Audit CSVs, JSON summaries, and training logs
+    └── old_logs/                              # Reference baseline logs
 ```
 
 ---
 
-## 🚀 How to Run in Google Colab (Step-by-Step)
+## 🚀 Quickstart & Reproduction
 
-### Option A: Running via the Master Interactive Notebook
-1. Open Google Colab: [colab.research.google.com](https://colab.research.google.com).
-2. Upload `CamVid_Semantic_Segmentation_Master.ipynb` and all project folders (`data/`, `models/`, `losses/`, `agent/`, `improvements/`, `utils/`, `experiments/`) to your Colab session.
-3. Switch runtime to GPU: `Runtime` -> `Change runtime type` -> select `T4 GPU` (or A100).
-4. Run each cell sequentially:
-   - **Cell 1**: Installs dependencies and verifies CUDA availability.
-   - **Cell 2**: Automatically downloads the official CamVid dataset and plots the class-pixel imbalance.
-   - **Cell 3**: Trains and evaluates the classical Random Forest baseline on handcrafted features.
-   - **Cell 4**: Computes parameters, GFLOPs, and latency for DeepLabV3+ ResNet-101 and SegFormer-B2.
-   - **Cell 5**: Executes the Pretraining Ablation (ImageNet vs. Cityscapes domain transfer).
-   - **Cell 6**: Executes the 5 Loss Functions Ablation (CE, Lovász-Softmax, Dice, Focal, JML).
-   - **Cell 7**: Runs the Goal-Driven Agent to discover optimal composite loss weights $(\lambda_{\text{CE}}, \lambda_{\text{JML}})$ and trains both models.
-   - **Cell 8**: Runs the 6 systematic improvements across 3 seeds (`42, 123, 456`).
-   - **Cell 9**: Runs the final test set evaluation across all seeds, reporting all required metrics and confusion matrices.
-   - **Cell 10**: Displays saved logs, confusion matrix figures, and summaries.
-
----
-
-## 💻 How to Run Locally via Command Line
-
-### 1. Install Requirements
+### 1. Installation
+Clone the repository and install dependencies:
 ```bash
+git clone https://github.com/lucifermorningstar4587/Camvid_Semantic_Segmentation.git
+cd Camvid_Semantic_Segmentation
 pip install -r requirements.txt
 ```
 
-### 2. End-to-End Execution via Master Script
+### 2. Dataset Setup
+Download and extract the official CamVid dataset (701 images: 367 train, 101 val, 233 test):
 ```bash
-# Run the entire pipeline end-to-end (25 epochs per training phase)
-python master_pipeline.py --stage all --epochs 25 --batch_size 4
+python data/download_camvid.py
 ```
 
-### 3. Or Run Individual Stages Separately
+### 3. Step-by-Step Experiment Execution
+
+#### A. Traditional ML Baseline (Random Forest)
 ```bash
-# Download CamVid dataset
-python master_pipeline.py --stage download
+python -u experiments/run_baseline_rf.py --data_root ./data/CamVid --log_dir ./outputs/new_logs
+```
 
-# Train and evaluate Random Forest baseline
-python experiments/run_baseline_rf.py
+#### B. Pretraining Ablation (ImageNet vs. Cityscapes)
+```bash
+# ImageNet-1K initialization
+python -u experiments/run_pretraining_ablation.py --pretraining imagenet --model all --epochs 25 --batch_size 4
 
-# Pretraining ablation (ImageNet vs Cityscapes)
-python experiments/run_pretraining_ablation.py --epochs 25 --batch_size 4
+# Cityscapes in-domain transfer
+python -u experiments/run_pretraining_ablation.py --pretraining cityscapes --model all --epochs 25 --batch_size 4
+```
 
-# 5 Losses ablation: run each loss individually or all at once
-python experiments/run_losses_ablation.py --loss ce --epochs 25 --batch_size 4
-python experiments/run_losses_ablation.py --loss lovasz --epochs 25 --batch_size 4
-python experiments/run_losses_ablation.py --loss dice --epochs 25 --batch_size 4
-python experiments/run_losses_ablation.py --loss focal --epochs 25 --batch_size 4
-python experiments/run_losses_ablation.py --loss jml --epochs 25 --batch_size 4
-# Or run all 5 losses automatically:
-# python experiments/run_losses_ablation.py --loss all --epochs 25
+#### C. Loss Functions Ablation (5 Decoupled Losses)
+```bash
+# Train on individual losses: ce, lovasz, dice, focal, jml
+python -u experiments/run_losses_ablation.py --loss ce --model all --epochs 25 --batch_size 4
+python -u experiments/run_losses_ablation.py --loss lovasz --model all --epochs 25 --batch_size 4
+python -u experiments/run_losses_ablation.py --loss dice --model all --epochs 25 --batch_size 4
+python -u experiments/run_losses_ablation.py --loss focal --model all --epochs 25 --batch_size 4
+python -u experiments/run_losses_ablation.py --loss jml --model all --epochs 25 --batch_size 4
 
-# Agent search for composite loss weights + train composite models
-python experiments/run_agent_composite.py --agent_trials 12 --full_epochs 25
+# Evaluate trained loss checkpoints on validation / test splits
+python -u experiments/run_losses_ablation.py --eval_only --split val
+python -u experiments/run_losses_ablation.py --eval_only --split test
+```
 
-# Run 6 Improvements Ablation: one by one or all at once
-python experiments/run_improvements_ablation.py --stage 1 --epochs 25 --batch_size 4
-python experiments/run_improvements_ablation.py --stage 2
-python experiments/run_improvements_ablation.py --stage 3
-python experiments/run_improvements_ablation.py --stage 4
-python experiments/run_improvements_ablation.py --stage 5 --epochs 25 --batch_size 4
-python experiments/run_improvements_ablation.py --stage 6 --extended_epochs 40 --batch_size 4
-python experiments/run_improvements_ablation.py --stage summary
-# Or run all 6 stages automatically:
-# python experiments/run_improvements_ablation.py --stage all --epochs 25 --extended_epochs 40
+#### D. Agent-Based Search
+```bash
+# Loss-weight search agents
+python -u experiments/search_segformer.py --agent_trials 15 --search_epochs 3 --data_root ./data/CamVid --log_dir ./outputs/new_logs
+python -u experiments/search_deeplab.py --agent_trials 15 --search_epochs 3 --data_root ./data/CamVid --log_dir ./outputs/new_logs
 
-# Final comprehensive test set evaluation
-python experiments/run_final_test.py
+# Threshold search agent for class prior calibration (tau*)
+python -u experiments/search_calibration_threshold.py
+```
+
+#### E. Production Multi-Seed Training (Seeds 42, 123, 456)
+```bash
+python -u experiments/train_semantic_transfer.py --model all --seed 42 --full_epochs 25 --batch_size 4
+python -u experiments/train_semantic_transfer.py --model all --seed 123 --full_epochs 25 --batch_size 4
+python -u experiments/train_semantic_transfer.py --model all --seed 456 --full_epochs 25 --batch_size 4
+```
+
+#### F. Progressive Improvements Ladder Evaluation
+```bash
+# Evaluate progressive stages on validation split
+python -u experiments/run_improvements_ablation.py --stage 1 --model all --seed all --split val
+python -u experiments/run_improvements_ablation.py --stage 2 --model all --seed all --split val
+python -u experiments/run_improvements_ablation.py --stage 3 --model all --seed all --split val
+python -u experiments/run_improvements_ablation.py --stage 4 --model all --seed all --split val
+python -u experiments/run_improvements_ablation.py --stage summary --split val
+
+# Evaluate on test split (reporting Mean ± Std across seeds)
+python -u experiments/run_improvements_ablation.py --stage summary
+```
+
+#### G. Final Test Benchmark & Complete Metrics
+```bash
+python -u experiments/run_final_test.py --data_root ./data/CamVid --log_dir ./outputs/new_logs
 ```
 
 ---
 
-## 🛡️ Overfitting Prevention Strategies Incorporated
-1. **Domain-Specific Pretraining Transfer**: Initializing from Cityscapes driving domain reduces sample-complexity and provides superior feature priors.
-2. **Heavy Albumentations Augmentations**: Random scaling, cropping, rotation, horizontal flip, and color jitter applied during training.
-3. **Class-Aware Copy-Paste**: Pastes instances of underrepresented classes (Pedestrian, Bicyclist, Pole) into donor images to combat class imbalance underfitting.
-4. **Regularization**: $L_2$ Weight Decay ($10^{-4}$), gradient norm clipping ($1.0$), and stochastic depth.
-5. **Learning Rate Schedule**: Cosine Annealing learning rate schedule with minimum $\eta_{\min} = 10^{-6}$.
-6. **Validation Checkpointing**: Early stopping and automatic model checkpointing saving strictly based on highest validation mIoU.
+## 📊 Evaluation Protocol & Metrics
+All models are evaluated on the full test set using standard segmentation metrics:
+* **mIoU (Mean Intersection over Union)**: Primary metric across 11 classes (excluding ignore class 255).
+* **Pixel Accuracy**: Overall fraction of correctly classified pixels.
+* **Mean Dice / F1-Score**: Harmonic mean of precision and recall.
+* **Mean Precision & Mean Recall**: Macro-averaged class-level diagnostic metrics.
+* **Boundary IoU**: Boundary contour localization accuracy ($d=2\text{px}$).
+* **Per-Class IoU**: Fine-grained performance breakdown across dominant and tail classes.
 
 ---
 
-## 📊 Output Logging Guarantee
-Every training run strictly outputs live timestamps and metrics to console and concurrently flushes to persistent files in `./outputs/logs/` and plots in `./outputs/plots/`:
-```
-[2026-11-10 18:50:12] Epoch [001/025] | Train Loss: 0.6214 | Train mIoU: 0.5821 | Val Loss: 0.5412 | Val mIoU: 0.6120 | LR: 0.000100
-```
-- Logs & Checkpoints saved to `./outputs/logs/` (`.log` text files, `_history.csv` spreadsheets, `.json` summaries)
-- Plots & Visualizations saved to `./outputs/plots/` (`class_pixel_imbalance.png`, `confusion_matrix_*.png`)
-Outputs are **never lost** even if Google Colab disconnects or the notebook reloads.
+## 🛡️ Zero-Leakage Compliance Guarantee
+1. **Agent Search Boundaries:** All hyperparameter searches (Optuna loss-weights $\lambda_{\text{CE}}, \lambda_{\text{JML}}$ and prior calibration temperature $\tau$) were conducted **strictly on the Validation partition**.
+2. **Prior Statistics:** Class frequency priors $\mathbf{p}_{\text{train}}$ were derived purely from the 367 training masks.
+3. **Pure Inference:** Test set evaluation was executed with `model.eval()`, `torch.no_grad()`, gradients disabled (`requires_grad=False`), and fixed frozen weights.
