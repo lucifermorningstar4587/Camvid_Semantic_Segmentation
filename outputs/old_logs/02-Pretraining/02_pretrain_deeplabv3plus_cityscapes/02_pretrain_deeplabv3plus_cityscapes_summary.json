@@ -1,0 +1,9 @@
+{
+    "model": "deeplabv3plus",
+    "pretraining": "cityscapes",
+    "best_val_miou": 0.7369,
+    "best_val_dice": 0.8172,
+    "best_val_acc": 0.9482,
+    "best_val_biou": 0.3986,
+    "checkpoint": "./outputs/checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth"
+}

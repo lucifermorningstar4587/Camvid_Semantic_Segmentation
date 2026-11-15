@@ -1,0 +1,33 @@
+[2026-11-10 19:35:32] === Experiment Log Initialized: baseline_random_forest | 2026-11-10 19:35:32 ===
+[2026-11-10 19:35:32] Starting Traditional Random Forest Baseline Training...
+[2026-11-10 19:36:28] Evaluating Random Forest on official Test set (233 images)...
+[2026-11-10 19:39:25] === Experiment Log Initialized: baseline_random_forest | 2026-11-10 19:39:25 ===
+[2026-11-10 19:39:25] Starting Traditional Random Forest Baseline Training...
+[2026-11-10 19:39:53] Evaluating Random Forest on official Test set (233 images)...
+[2026-11-10 19:41:51] === Random Forest Baseline Test Results ===
+[2026-11-10 19:41:51] Test mIoU: 0.3212
+[2026-11-10 19:41:51] Test Mean Dice/F1: 0.4257
+[2026-11-10 19:41:51] Test Mean Precision: 0.4132
+[2026-11-10 19:41:51] Test Mean Recall: 0.4682
+[2026-11-10 19:41:51] Test Pixel Accuracy: 0.6762
+[2026-11-10 19:41:51] Test Boundary IoU: 0.1227
+[2026-11-10 19:41:51] Experimental summary successfully saved to: D:\finalprojv3\logs\baseline_random_forest_summary.json
+[2026-11-10 19:42:26] === Random Forest Baseline Test Results ===
+[2026-11-10 19:42:26] Test mIoU: 0.3094
+[2026-11-10 19:42:26] Test Mean Dice/F1: 0.4111
+[2026-11-10 19:42:26] Test Mean Precision: 0.3999
+[2026-11-10 19:42:26] Test Mean Recall: 0.4654
+[2026-11-10 19:42:26] Test Pixel Accuracy: 0.6556
+[2026-11-10 19:42:26] Test Boundary IoU: 0.1155
+[2026-11-10 19:42:26] Experimental summary successfully saved to: D:\finalprojv3\logs\baseline_random_forest_summary.json
+[2026-11-10 21:14:07] === Experiment Log Initialized: 01_baseline_rf | 2026-11-10 21:14:07 ===
+[2026-11-10 21:14:07] Starting Traditional Random Forest Baseline Training...
+[2026-11-10 21:14:29] Evaluating Random Forest on official Test set (233 images)...
+[2026-11-10 21:15:42] === Random Forest Baseline Test Results ===
+[2026-11-10 21:15:42] Test mIoU: 0.3085
+[2026-11-10 21:15:42] Test Mean Dice/F1: 0.4105
+[2026-11-10 21:15:42] Test Mean Precision: 0.4000
+[2026-11-10 21:15:42] Test Mean Recall: 0.4841
+[2026-11-10 21:15:42] Test Pixel Accuracy: 0.6428
+[2026-11-10 21:15:42] Test Boundary IoU: 0.1142
+[2026-11-10 21:15:42] Experimental summary successfully saved to: D:\finalprojv3\outputs\logs\01_baseline_rf_summary.json

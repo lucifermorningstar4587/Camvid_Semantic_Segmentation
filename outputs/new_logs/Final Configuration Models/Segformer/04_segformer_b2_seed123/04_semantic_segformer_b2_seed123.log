@@ -1,0 +1,39 @@
+[2026-11-13 22:24:39] === Experiment Log Initialized: 04_semantic_segformer_b2_seed123 | 2026-11-13 22:24:39 ===
+[2026-11-13 22:24:39] ======================================================================
+[2026-11-13 22:24:39] Training SEGFORMER_B2 [Seed 123] with 100% Semantic Transfer using Agent Weights (04_agent_weights_segformer.json): 0.65*CE + 1.1*JML (25 epochs)
+[2026-11-13 22:24:39] ======================================================================
+[2026-11-13 22:25:25] Epoch [001/025] | Train Loss: 0.5442 | Train mIoU: 0.7083 | Val Loss: 0.4183 | Val mIoU: 0.7642 | LR: 0.000100
+[2026-11-13 22:25:25] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7642) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:26:12] Epoch [002/025] | Train Loss: 0.4416 | Train mIoU: 0.7671 | Val Loss: 0.3725 | Val mIoU: 0.7912 | LR: 0.000100
+[2026-11-13 22:26:12] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7912) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:26:59] Epoch [003/025] | Train Loss: 0.3917 | Train mIoU: 0.7882 | Val Loss: 0.3711 | Val mIoU: 0.7914 | LR: 0.000098
+[2026-11-13 22:26:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7914) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:27:45] Epoch [004/025] | Train Loss: 0.3774 | Train mIoU: 0.7956 | Val Loss: 0.3752 | Val mIoU: 0.7852 | LR: 0.000097
+[2026-11-13 22:28:31] Epoch [005/025] | Train Loss: 0.3512 | Train mIoU: 0.8131 | Val Loss: 0.3615 | Val mIoU: 0.7963 | LR: 0.000094
+[2026-11-13 22:28:31] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7963) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:29:17] Epoch [006/025] | Train Loss: 0.3470 | Train mIoU: 0.8126 | Val Loss: 0.3422 | Val mIoU: 0.8059 | LR: 0.000091
+[2026-11-13 22:29:17] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8059) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:30:09] Epoch [007/025] | Train Loss: 0.3342 | Train mIoU: 0.8206 | Val Loss: 0.3403 | Val mIoU: 0.8073 | LR: 0.000087
+[2026-11-13 22:30:09] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8073) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:31:26] Epoch [008/025] | Train Loss: 0.3225 | Train mIoU: 0.8277 | Val Loss: 0.3339 | Val mIoU: 0.8114 | LR: 0.000082
+[2026-11-13 22:31:26] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8114) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:32:51] Epoch [009/025] | Train Loss: 0.3190 | Train mIoU: 0.8287 | Val Loss: 0.3376 | Val mIoU: 0.8101 | LR: 0.000077
+[2026-11-13 22:34:14] Epoch [010/025] | Train Loss: 0.3142 | Train mIoU: 0.8308 | Val Loss: 0.3515 | Val mIoU: 0.8028 | LR: 0.000072
+[2026-11-13 22:35:25] Epoch [011/025] | Train Loss: 0.3041 | Train mIoU: 0.8358 | Val Loss: 0.3439 | Val mIoU: 0.8081 | LR: 0.000066
+[2026-11-13 22:36:34] Epoch [012/025] | Train Loss: 0.3055 | Train mIoU: 0.8377 | Val Loss: 0.3422 | Val mIoU: 0.8105 | LR: 0.000060
+[2026-11-13 22:37:58] Epoch [013/025] | Train Loss: 0.2989 | Train mIoU: 0.8397 | Val Loss: 0.3425 | Val mIoU: 0.8104 | LR: 0.000054
+[2026-11-13 22:39:27] Epoch [014/025] | Train Loss: 0.2963 | Train mIoU: 0.8413 | Val Loss: 0.3430 | Val mIoU: 0.8064 | LR: 0.000047
+[2026-11-13 22:40:47] Epoch [015/025] | Train Loss: 0.2902 | Train mIoU: 0.8424 | Val Loss: 0.3359 | Val mIoU: 0.8130 | LR: 0.000041
+[2026-11-13 22:40:47] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8130) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:41:59] Epoch [016/025] | Train Loss: 0.2854 | Train mIoU: 0.8450 | Val Loss: 0.3296 | Val mIoU: 0.8178 | LR: 0.000035
+[2026-11-13 22:41:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8178) to ./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+[2026-11-13 22:43:13] Epoch [017/025] | Train Loss: 0.2819 | Train mIoU: 0.8475 | Val Loss: 0.3343 | Val mIoU: 0.8137 | LR: 0.000029
+[2026-11-13 22:44:12] Epoch [018/025] | Train Loss: 0.2817 | Train mIoU: 0.8460 | Val Loss: 0.3385 | Val mIoU: 0.8134 | LR: 0.000024
+[2026-11-13 22:45:24] Epoch [019/025] | Train Loss: 0.2762 | Train mIoU: 0.8505 | Val Loss: 0.3345 | Val mIoU: 0.8141 | LR: 0.000019
+[2026-11-13 22:46:49] Epoch [020/025] | Train Loss: 0.2756 | Train mIoU: 0.8513 | Val Loss: 0.3337 | Val mIoU: 0.8166 | LR: 0.000014
+[2026-11-13 22:48:13] Epoch [021/025] | Train Loss: 0.2708 | Train mIoU: 0.8550 | Val Loss: 0.3332 | Val mIoU: 0.8159 | LR: 0.000010
+[2026-11-13 22:49:23] Epoch [022/025] | Train Loss: 0.2734 | Train mIoU: 0.8535 | Val Loss: 0.3330 | Val mIoU: 0.8164 | LR: 0.000007
+[2026-11-13 22:50:46] Epoch [023/025] | Train Loss: 0.2748 | Train mIoU: 0.8529 | Val Loss: 0.3358 | Val mIoU: 0.8149 | LR: 0.000004
+[2026-11-13 22:52:01] Epoch [024/025] | Train Loss: 0.2683 | Train mIoU: 0.8541 | Val Loss: 0.3344 | Val mIoU: 0.8159 | LR: 0.000003
+[2026-11-13 22:53:23] Epoch [025/025] | Train Loss: 0.2767 | Train mIoU: 0.8507 | Val Loss: 0.3341 | Val mIoU: 0.8156 | LR: 0.000001
+[2026-11-13 22:53:23] Experimental summary successfully saved to: D:\finalprojv3\outputs\new_logs\04_semantic_segformer_b2_seed123_summary.json

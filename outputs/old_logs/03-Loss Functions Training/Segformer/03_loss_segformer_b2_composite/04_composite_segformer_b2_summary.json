@@ -1,0 +1,10 @@
+{
+    "model": "segformer_b2",
+    "lambda_ce": 0.65,
+    "lambda_jml": 1.1,
+    "best_val_miou": 0.7959,
+    "best_val_dice": 0.8646,
+    "best_val_acc": 0.9597,
+    "best_val_biou": 0.4726,
+    "checkpoint": "./outputs/checkpoints/04_composite_segformer_b2_best.pth"
+}

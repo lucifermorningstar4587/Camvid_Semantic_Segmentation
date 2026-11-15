@@ -1,0 +1,37 @@
+[2026-11-12 20:00:59] === Experiment Log Initialized: 03_loss_segformer_b2_focal | 2026-11-12 20:00:59 ===
+[2026-11-12 20:00:59] ======================================================================
+[2026-11-12 20:00:59] Starting Loss Ablation: SEGFORMER_B2 with FOCAL Loss (25 epochs)
+[2026-11-12 20:00:59] ======================================================================
+[2026-11-12 20:01:21] [Optimizer] SegFormer-B2 AdamW: lr=0.0001, weight_decay=0.01, CosineAnnealingLR
+[2026-11-12 20:02:08] Epoch [001/025] | Train Loss: 0.1184 | Train mIoU: 0.6835 | Val Loss: 0.0540 | Val mIoU: 0.7666 | LR: 0.000100
+[2026-11-12 20:02:08] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7666) to ./outputs/new_checkpoints/03_loss_segformer_b2_focal_best.pth
+[2026-11-12 20:02:55] Epoch [002/025] | Train Loss: 0.0576 | Train mIoU: 0.7513 | Val Loss: 0.0456 | Val mIoU: 0.7887 | LR: 0.000100
+[2026-11-12 20:02:55] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7887) to ./outputs/new_checkpoints/03_loss_segformer_b2_focal_best.pth
+[2026-11-12 20:03:41] Epoch [003/025] | Train Loss: 0.0503 | Train mIoU: 0.7558 | Val Loss: 0.0477 | Val mIoU: 0.7874 | LR: 0.000098
+[2026-11-12 20:04:27] Epoch [004/025] | Train Loss: 0.0456 | Train mIoU: 0.7813 | Val Loss: 0.0451 | Val mIoU: 0.7936 | LR: 0.000097
+[2026-11-12 20:04:27] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7936) to ./outputs/new_checkpoints/03_loss_segformer_b2_focal_best.pth
+[2026-11-12 20:05:13] Epoch [005/025] | Train Loss: 0.0428 | Train mIoU: 0.7894 | Val Loss: 0.0467 | Val mIoU: 0.8009 | LR: 0.000094
+[2026-11-12 20:05:13] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8009) to ./outputs/new_checkpoints/03_loss_segformer_b2_focal_best.pth
+[2026-11-12 20:06:01] Epoch [006/025] | Train Loss: 0.0404 | Train mIoU: 0.7970 | Val Loss: 0.0519 | Val mIoU: 0.7742 | LR: 0.000091
+[2026-11-12 20:06:47] Epoch [007/025] | Train Loss: 0.0386 | Train mIoU: 0.7985 | Val Loss: 0.0465 | Val mIoU: 0.7869 | LR: 0.000087
+[2026-11-12 20:07:33] Epoch [008/025] | Train Loss: 0.0370 | Train mIoU: 0.8005 | Val Loss: 0.0441 | Val mIoU: 0.7944 | LR: 0.000082
+[2026-11-12 20:08:19] Epoch [009/025] | Train Loss: 0.0355 | Train mIoU: 0.8102 | Val Loss: 0.0470 | Val mIoU: 0.7969 | LR: 0.000077
+[2026-11-12 20:09:06] Epoch [010/025] | Train Loss: 0.0342 | Train mIoU: 0.8173 | Val Loss: 0.0452 | Val mIoU: 0.8047 | LR: 0.000072
+[2026-11-12 20:09:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.8047) to ./outputs/new_checkpoints/03_loss_segformer_b2_focal_best.pth
+[2026-11-12 20:09:52] Epoch [011/025] | Train Loss: 0.0347 | Train mIoU: 0.8165 | Val Loss: 0.0478 | Val mIoU: 0.7993 | LR: 0.000066
+[2026-11-12 20:10:38] Epoch [012/025] | Train Loss: 0.0331 | Train mIoU: 0.8169 | Val Loss: 0.0526 | Val mIoU: 0.7975 | LR: 0.000060
+[2026-11-12 20:11:24] Epoch [013/025] | Train Loss: 0.0319 | Train mIoU: 0.8237 | Val Loss: 0.0493 | Val mIoU: 0.7989 | LR: 0.000054
+[2026-11-12 20:12:10] Epoch [014/025] | Train Loss: 0.0310 | Train mIoU: 0.8264 | Val Loss: 0.0553 | Val mIoU: 0.7957 | LR: 0.000047
+[2026-11-12 20:12:56] Epoch [015/025] | Train Loss: 0.0317 | Train mIoU: 0.8257 | Val Loss: 0.0490 | Val mIoU: 0.7988 | LR: 0.000041
+[2026-11-12 20:13:42] Epoch [016/025] | Train Loss: 0.0309 | Train mIoU: 0.8275 | Val Loss: 0.0488 | Val mIoU: 0.7964 | LR: 0.000035
+[2026-11-12 20:14:28] Epoch [017/025] | Train Loss: 0.0304 | Train mIoU: 0.8303 | Val Loss: 0.0483 | Val mIoU: 0.7990 | LR: 0.000029
+[2026-11-12 20:15:14] Epoch [018/025] | Train Loss: 0.0300 | Train mIoU: 0.8303 | Val Loss: 0.0481 | Val mIoU: 0.7985 | LR: 0.000024
+[2026-11-12 20:16:00] Epoch [019/025] | Train Loss: 0.0295 | Train mIoU: 0.8323 | Val Loss: 0.0501 | Val mIoU: 0.7978 | LR: 0.000019
+[2026-11-12 20:16:46] Epoch [020/025] | Train Loss: 0.0290 | Train mIoU: 0.8308 | Val Loss: 0.0489 | Val mIoU: 0.8007 | LR: 0.000014
+[2026-11-12 20:17:32] Epoch [021/025] | Train Loss: 0.0293 | Train mIoU: 0.8304 | Val Loss: 0.0516 | Val mIoU: 0.7985 | LR: 0.000010
+[2026-11-12 20:18:18] Epoch [022/025] | Train Loss: 0.0288 | Train mIoU: 0.8329 | Val Loss: 0.0500 | Val mIoU: 0.8006 | LR: 0.000007
+[2026-11-12 20:19:04] Epoch [023/025] | Train Loss: 0.0293 | Train mIoU: 0.8302 | Val Loss: 0.0505 | Val mIoU: 0.7989 | LR: 0.000004
+[2026-11-12 20:19:51] Epoch [024/025] | Train Loss: 0.0286 | Train mIoU: 0.8333 | Val Loss: 0.0508 | Val mIoU: 0.7990 | LR: 0.000003
+[2026-11-12 20:20:36] Epoch [025/025] | Train Loss: 0.0288 | Train mIoU: 0.8344 | Val Loss: 0.0506 | Val mIoU: 0.7978 | LR: 0.000001
+[2026-11-12 20:20:36] Experimental summary successfully saved to: D:\finalprojv3\outputs\new_logs\03_loss_segformer_b2_focal_summary.json
+[2026-11-12 20:20:36] Result for segformer_b2 with focal saved to outputs\new_logs\03_losses_ablation_summary.csv

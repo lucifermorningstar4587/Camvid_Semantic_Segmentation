@@ -1,0 +1,8 @@
+{
+    "model": "deeplabv3plus",
+    "lambda_ce": 0.75,
+    "lambda_jml": 0.9500000000000001,
+    "best_val_miou": 0.6203,
+    "best_trial": 2,
+    "trials_csv": "D:\\finalprojv3\\outputs\\logs\\04_agent_trials_deeplab.csv"
+}

@@ -1,0 +1,19 @@
+[2026-11-14 00:32:51] === Experiment Log Initialized: 05_improvement_test_stage_3 | 2026-11-14 00:32:51 ===
+[2026-11-14 00:32:53] [SEGFORMER_B2 | Seed 42] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 00:38:28]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7863 | Dice/F1: 0.8723 | Precision: 0.8773 | Recall: 0.8680 | Pixel Acc: 0.9440 | Boundary IoU: 0.3989
+[2026-11-14 00:38:28] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 00:38:28] [SEGFORMER_B2 | Seed 123] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 00:43:33]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7853 | Dice/F1: 0.8709 | Precision: 0.8830 | Recall: 0.8609 | Pixel Acc: 0.9453 | Boundary IoU: 0.3990
+[2026-11-14 00:43:33] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 00:43:33] [SEGFORMER_B2 | Seed 456] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 00:48:23]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7916 | Dice/F1: 0.8753 | Precision: 0.8897 | Recall: 0.8639 | Pixel Acc: 0.9466 | Boundary IoU: 0.4013
+[2026-11-14 00:48:23] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 00:48:23] [DEEPLABV3PLUS | Seed 42] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 00:51:41]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7698 | Dice/F1: 0.8600 | Precision: 0.8796 | Recall: 0.8459 | Pixel Acc: 0.9406 | Boundary IoU: 0.3538
+[2026-11-14 00:51:41] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 00:51:41] [DEEPLABV3PLUS | Seed 123] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 01:01:27]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7697 | Dice/F1: 0.8602 | Precision: 0.8758 | Recall: 0.8490 | Pixel Acc: 0.9396 | Boundary IoU: 0.3536
+[2026-11-14 01:01:27] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 01:01:27] [DEEPLABV3PLUS | Seed 456] Evaluating Improvement 3: Multi-Scale TTA Pyramid on TEST...
+[2026-11-14 01:11:56]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.7690 | Dice/F1: 0.8597 | Precision: 0.8769 | Recall: 0.8470 | Pixel Acc: 0.9403 | Boundary IoU: 0.3563
+[2026-11-14 01:11:56] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv

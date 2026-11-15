@@ -1,0 +1,11 @@
+model,loss,best_val_miou,best_val_dice,best_val_acc,best_val_biou,checkpoint
+deeplabv3plus,ce,0.7352,0.8139,0.948,0.3934,./outputs/checkpoints/03_loss_deeplabv3plus_ce_best.pth
+segformer_b2,ce,0.7781,0.8469,0.9574,0.4502,./outputs/checkpoints/03_loss_segformer_b2_ce_best.pth
+deeplabv3plus,lovasz,0.7569,0.8337,0.9502,0.4132,./outputs/checkpoints/03_loss_deeplabv3plus_lovasz_best.pth
+segformer_b2,lovasz,0.7958,0.8658,0.9581,0.4705,./outputs/checkpoints/03_loss_segformer_b2_lovasz_best.pth
+deeplabv3plus,dice,0.7426,0.8252,0.9432,0.3874,./outputs/checkpoints/03_loss_deeplabv3plus_dice_best.pth
+segformer_b2,dice,0.7892,0.8614,0.9568,0.4461,./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+deeplabv3plus,focal,0.7382,0.8217,0.9464,0.3959,./outputs/checkpoints/03_loss_deeplabv3plus_focal_best.pth
+segformer_b2,focal,0.7794,0.8512,0.9568,0.4478,./outputs/checkpoints/03_loss_segformer_b2_focal_best.pth
+deeplabv3plus,jml,0.7436,0.818,0.9488,0.4009,./outputs/checkpoints/03_loss_deeplabv3plus_jml_best.pth
+segformer_b2,jml,0.7914,0.8632,0.9569,0.4584,./outputs/checkpoints/03_loss_segformer_b2_jml_best.pth

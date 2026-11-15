@@ -1,0 +1,48 @@
+[2026-11-11 01:12:00] === Experiment Log Initialized: 03_loss_segformer_b2_dice | 2026-11-11 01:12:00 ===
+[2026-11-11 01:12:00] ===========================================================
+[2026-11-11 01:12:00] Starting Training: SEGFORMER_B2 with DICE Loss (25 epochs)
+[2026-11-11 01:12:00] ===========================================================
+[2026-11-11 01:13:04] Epoch [001/025] | Train Loss: 0.6964 | Train mIoU: 0.3511 | Val Loss: 0.5392 | Val mIoU: 0.4678 | LR: 0.000100
+[2026-11-11 01:13:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.4678) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:14:04] Epoch [002/025] | Train Loss: 0.4907 | Train mIoU: 0.5133 | Val Loss: 0.4058 | Val mIoU: 0.5750 | LR: 0.000100
+[2026-11-11 01:14:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.5750) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:15:05] Epoch [003/025] | Train Loss: 0.3680 | Train mIoU: 0.6198 | Val Loss: 0.2920 | Val mIoU: 0.6801 | LR: 0.000098
+[2026-11-11 01:15:05] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6801) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:16:07] Epoch [004/025] | Train Loss: 0.3108 | Train mIoU: 0.6608 | Val Loss: 0.2524 | Val mIoU: 0.7101 | LR: 0.000097
+[2026-11-11 01:16:07] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7101) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:17:06] Epoch [005/025] | Train Loss: 0.2745 | Train mIoU: 0.6946 | Val Loss: 0.2349 | Val mIoU: 0.7299 | LR: 0.000094
+[2026-11-11 01:17:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7299) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:18:06] Epoch [006/025] | Train Loss: 0.2521 | Train mIoU: 0.7172 | Val Loss: 0.2054 | Val mIoU: 0.7538 | LR: 0.000091
+[2026-11-11 01:18:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7538) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:19:08] Epoch [007/025] | Train Loss: 0.2249 | Train mIoU: 0.7309 | Val Loss: 0.2011 | Val mIoU: 0.7617 | LR: 0.000087
+[2026-11-11 01:19:08] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7617) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:20:10] Epoch [008/025] | Train Loss: 0.2106 | Train mIoU: 0.7472 | Val Loss: 0.1907 | Val mIoU: 0.7672 | LR: 0.000082
+[2026-11-11 01:20:10] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7672) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:21:11] Epoch [009/025] | Train Loss: 0.2052 | Train mIoU: 0.7581 | Val Loss: 0.1940 | Val mIoU: 0.7649 | LR: 0.000077
+[2026-11-11 01:22:04] Epoch [010/025] | Train Loss: 0.1926 | Train mIoU: 0.7637 | Val Loss: 0.1825 | Val mIoU: 0.7739 | LR: 0.000072
+[2026-11-11 01:22:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7739) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:23:03] Epoch [011/025] | Train Loss: 0.1839 | Train mIoU: 0.7715 | Val Loss: 0.1885 | Val mIoU: 0.7721 | LR: 0.000066
+[2026-11-11 01:24:02] Epoch [012/025] | Train Loss: 0.1848 | Train mIoU: 0.7744 | Val Loss: 0.1780 | Val mIoU: 0.7787 | LR: 0.000060
+[2026-11-11 01:24:02] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7787) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:25:02] Epoch [013/025] | Train Loss: 0.1736 | Train mIoU: 0.7804 | Val Loss: 0.1709 | Val mIoU: 0.7832 | LR: 0.000054
+[2026-11-11 01:25:02] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7832) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:26:01] Epoch [014/025] | Train Loss: 0.1745 | Train mIoU: 0.7860 | Val Loss: 0.1745 | Val mIoU: 0.7835 | LR: 0.000047
+[2026-11-11 01:26:01] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7835) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:27:01] Epoch [015/025] | Train Loss: 0.1700 | Train mIoU: 0.7873 | Val Loss: 0.1721 | Val mIoU: 0.7866 | LR: 0.000041
+[2026-11-11 01:27:01] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7866) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:28:00] Epoch [016/025] | Train Loss: 0.1708 | Train mIoU: 0.7893 | Val Loss: 0.1710 | Val mIoU: 0.7871 | LR: 0.000035
+[2026-11-11 01:28:00] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7871) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:28:59] Epoch [017/025] | Train Loss: 0.1663 | Train mIoU: 0.7923 | Val Loss: 0.1683 | Val mIoU: 0.7877 | LR: 0.000029
+[2026-11-11 01:28:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7877) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:29:58] Epoch [018/025] | Train Loss: 0.1598 | Train mIoU: 0.7929 | Val Loss: 0.1704 | Val mIoU: 0.7855 | LR: 0.000024
+[2026-11-11 01:30:56] Epoch [019/025] | Train Loss: 0.1628 | Train mIoU: 0.7965 | Val Loss: 0.1676 | Val mIoU: 0.7887 | LR: 0.000019
+[2026-11-11 01:30:56] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7887) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:31:56] Epoch [020/025] | Train Loss: 0.1587 | Train mIoU: 0.8001 | Val Loss: 0.1685 | Val mIoU: 0.7892 | LR: 0.000014
+[2026-11-11 01:31:56] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7892) to ./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth
+[2026-11-11 01:32:55] Epoch [021/025] | Train Loss: 0.1574 | Train mIoU: 0.8002 | Val Loss: 0.1687 | Val mIoU: 0.7878 | LR: 0.000010
+[2026-11-11 01:33:53] Epoch [022/025] | Train Loss: 0.1591 | Train mIoU: 0.8007 | Val Loss: 0.1686 | Val mIoU: 0.7886 | LR: 0.000007
+[2026-11-11 01:34:51] Epoch [023/025] | Train Loss: 0.1565 | Train mIoU: 0.8006 | Val Loss: 0.1688 | Val mIoU: 0.7885 | LR: 0.000004
+[2026-11-11 01:35:51] Epoch [024/025] | Train Loss: 0.1551 | Train mIoU: 0.8009 | Val Loss: 0.1685 | Val mIoU: 0.7886 | LR: 0.000003
+[2026-11-11 01:36:48] Epoch [025/025] | Train Loss: 0.1581 | Train mIoU: 0.7996 | Val Loss: 0.1688 | Val mIoU: 0.7889 | LR: 0.000001
+[2026-11-11 01:36:48] Experimental summary successfully saved to: D:\finalprojv3\outputs\logs\03_loss_segformer_b2_dice_summary.json
+[2026-11-11 01:36:48] Result for segformer_b2 with dice appended to outputs\logs\03_losses_ablation_summary.csv

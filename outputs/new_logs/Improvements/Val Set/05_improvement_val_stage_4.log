@@ -1,0 +1,7 @@
+[2026-11-14 03:05:38] === Experiment Log Initialized: 05_improvement_val_stage_4 | 2026-11-14 03:05:38 ===
+[2026-11-14 03:05:40] [SEGFORMER_B2 | Seed 42] Evaluating Improvement 4: Class Prior Calibration on VAL...
+[2026-11-14 03:10:29]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.8546 | Dice/F1: 0.9144 | Precision: 0.9118 | Recall: 0.9188 | Pixel Acc: 0.9702 | Boundary IoU: 0.4345
+[2026-11-14 03:10:29] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv
+[2026-11-14 03:10:29] [DEEPLABV3PLUS | Seed 42] Evaluating Improvement 4: Class Prior Calibration on VAL...
+[2026-11-14 03:11:59]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.8321 | Dice/F1: 0.8934 | Precision: 0.9117 | Recall: 0.8857 | Pixel Acc: 0.9664 | Boundary IoU: 0.3927
+[2026-11-14 03:11:59] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv

@@ -1,0 +1,9 @@
+{
+    "model": "deeplabv3plus",
+    "loss": "focal",
+    "best_val_miou": 0.7382,
+    "best_val_dice": 0.8217,
+    "best_val_acc": 0.9464,
+    "best_val_biou": 0.3959,
+    "checkpoint": "./outputs/checkpoints/03_loss_deeplabv3plus_focal_best.pth"
+}

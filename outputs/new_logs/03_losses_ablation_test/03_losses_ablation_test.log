@@ -1,0 +1,19 @@
+[2026-11-14 13:44:10] === Experiment Log Initialized: 03_losses_ablation_test | 2026-11-14 13:44:10 ===
+[2026-11-14 13:44:10] === Evaluating Loss Functions Ablation on Official CamVid Test Partition (233 images) ===
+[2026-11-14 13:44:22]   [DEEPLABV3PLUS] Loss: CE         | Test mIoU: 71.99% | Pixel Acc: 93.12% | Dice/F1: 82.01% | Boundary IoU: 0.3757
+[2026-11-14 13:44:31]   [DEEPLABV3PLUS] Loss: FOCAL      | Test mIoU: 71.41% | Pixel Acc: 92.75% | Dice/F1: 81.60% | Boundary IoU: 0.3671
+[2026-11-14 14:01:36] === Experiment Log Initialized: 03_losses_ablation_test | 2026-11-14 14:01:36 ===
+[2026-11-14 14:01:36] === Evaluating Loss Functions Ablation on CamVid [TEST] Partition ===
+[2026-11-14 14:02:11]   [DEEPLABV3PLUS] Loss: CE         | Test mIoU: 71.99% | Pixel Acc: 93.12% | Dice/F1: 82.01% | Boundary IoU: 0.3757
+[2026-11-14 14:02:34]   [DEEPLABV3PLUS] Loss: LOVASZ     | Test mIoU: 72.07% | Pixel Acc: 92.58% | Dice/F1: 82.25% | Boundary IoU: 0.3664
+[2026-11-14 14:02:54]   [DEEPLABV3PLUS] Loss: DICE       | Test mIoU: 71.46% | Pixel Acc: 92.43% | Dice/F1: 81.81% | Boundary IoU: 0.3528
+[2026-11-14 14:03:15]   [DEEPLABV3PLUS] Loss: FOCAL      | Test mIoU: 71.41% | Pixel Acc: 92.75% | Dice/F1: 81.60% | Boundary IoU: 0.3671
+[2026-11-14 14:03:37]   [DEEPLABV3PLUS] Loss: JML        | Test mIoU: 72.07% | Pixel Acc: 92.63% | Dice/F1: 82.22% | Boundary IoU: 0.3588
+[2026-11-14 14:04:00]   [DEEPLABV3PLUS] Loss: COMPOSITE  | Test mIoU: 72.30% | Pixel Acc: 92.96% | Dice/F1: 82.35% | Boundary IoU: 0.3727
+[2026-11-14 14:04:23]   [SEGFORMER_B2] Loss: CE         | Test mIoU: 74.51% | Pixel Acc: 93.70% | Dice/F1: 83.97% | Boundary IoU: 0.4239
+[2026-11-14 14:04:46]   [SEGFORMER_B2] Loss: LOVASZ     | Test mIoU: 74.33% | Pixel Acc: 93.34% | Dice/F1: 83.92% | Boundary IoU: 0.4261
+[2026-11-14 14:05:09]   [SEGFORMER_B2] Loss: DICE       | Test mIoU: 73.84% | Pixel Acc: 93.14% | Dice/F1: 83.55% | Boundary IoU: 0.4188
+[2026-11-14 14:05:32]   [SEGFORMER_B2] Loss: FOCAL      | Test mIoU: 73.98% | Pixel Acc: 93.35% | Dice/F1: 83.67% | Boundary IoU: 0.4189
+[2026-11-14 14:05:46]   [SEGFORMER_B2] Loss: JML        | Test mIoU: 74.20% | Pixel Acc: 93.58% | Dice/F1: 83.78% | Boundary IoU: 0.4163
+[2026-11-14 14:05:58]   [SEGFORMER_B2] Loss: COMPOSITE  | Test mIoU: 74.47% | Pixel Acc: 93.40% | Dice/F1: 84.06% | Boundary IoU: 0.4298
+[2026-11-14 14:05:58] Results saved to: outputs\new_logs\03_losses_ablation_test_summary.csv

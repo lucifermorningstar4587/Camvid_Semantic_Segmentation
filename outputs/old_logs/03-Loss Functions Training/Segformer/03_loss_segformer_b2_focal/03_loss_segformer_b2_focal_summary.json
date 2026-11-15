@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "loss": "focal",
+    "best_val_miou": 0.7794,
+    "best_val_dice": 0.8512,
+    "best_val_acc": 0.9568,
+    "best_val_biou": 0.4478,
+    "checkpoint": "./outputs/checkpoints/03_loss_segformer_b2_focal_best.pth"
+}

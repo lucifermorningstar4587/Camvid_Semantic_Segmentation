@@ -1,0 +1,7 @@
+[2026-11-14 02:59:31] === Experiment Log Initialized: 05_improvement_val_stage_3 | 2026-11-14 02:59:31 ===
+[2026-11-14 02:59:33] [SEGFORMER_B2 | Seed 42] Evaluating Improvement 3: Multi-Scale TTA Pyramid on VAL...
+[2026-11-14 03:02:55]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.8546 | Dice/F1: 0.9139 | Precision: 0.9183 | Recall: 0.9122 | Pixel Acc: 0.9704 | Boundary IoU: 0.4359
+[2026-11-14 03:02:55] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv
+[2026-11-14 03:02:55] [DEEPLABV3PLUS | Seed 42] Evaluating Improvement 3: Multi-Scale TTA Pyramid on VAL...
+[2026-11-14 03:05:31]   --> [PROGRESSIVE] 3. + Multi-Scale TTA | mIoU: 0.8308 | Dice/F1: 0.8920 | Precision: 0.9148 | Recall: 0.8815 | Pixel Acc: 0.9663 | Boundary IoU: 0.3923
+[2026-11-14 03:05:31] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv

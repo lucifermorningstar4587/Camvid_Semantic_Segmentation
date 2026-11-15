@@ -1,0 +1,8 @@
+{
+    "model": "segformer_b2",
+    "lambda_ce": 0.65,
+    "lambda_jml": 1.1,
+    "best_val_miou": 0.6679,
+    "best_trial": 5,
+    "trials_csv": "D:\\finalprojv3\\outputs\\logs\\04_agent_trials_segformer.csv"
+}

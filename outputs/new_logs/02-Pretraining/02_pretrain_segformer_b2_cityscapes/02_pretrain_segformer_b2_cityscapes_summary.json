@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "pretraining": "cityscapes",
+    "best_val_miou": 0.8047,
+    "best_val_dice": 0.8742,
+    "best_val_acc": 0.9607,
+    "best_val_biou": 0.47,
+    "checkpoint": "./outputs/new_checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth"
+}

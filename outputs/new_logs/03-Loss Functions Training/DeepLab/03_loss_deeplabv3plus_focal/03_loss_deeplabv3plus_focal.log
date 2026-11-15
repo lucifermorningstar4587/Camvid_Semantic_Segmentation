@@ -1,0 +1,44 @@
+[2026-11-12 19:46:54] === Experiment Log Initialized: 03_loss_deeplabv3plus_focal | 2026-11-12 19:46:54 ===
+[2026-11-12 19:46:54] ======================================================================
+[2026-11-12 19:46:54] Starting Loss Ablation: DEEPLABV3PLUS with FOCAL Loss (25 epochs)
+[2026-11-12 19:46:54] ======================================================================
+[2026-11-12 19:46:55] [Optimizer] DeepLabV3+ SGD: lr=0.005, momentum=0.9, PolynomialLR(power=1.0)
+[2026-11-12 19:47:39] Epoch [001/025] | Train Loss: 0.2019 | Train mIoU: 0.6134 | Val Loss: 0.0813 | Val mIoU: 0.7205 | LR: 0.005000
+[2026-11-12 19:47:39] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7205) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:48:12] Epoch [002/025] | Train Loss: 0.0921 | Train mIoU: 0.6851 | Val Loss: 0.0686 | Val mIoU: 0.7437 | LR: 0.004800
+[2026-11-12 19:48:12] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7437) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:48:46] Epoch [003/025] | Train Loss: 0.0738 | Train mIoU: 0.7078 | Val Loss: 0.0642 | Val mIoU: 0.7514 | LR: 0.004600
+[2026-11-12 19:48:46] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7514) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:49:19] Epoch [004/025] | Train Loss: 0.0662 | Train mIoU: 0.7236 | Val Loss: 0.0641 | Val mIoU: 0.7504 | LR: 0.004400
+[2026-11-12 19:49:51] Epoch [005/025] | Train Loss: 0.0603 | Train mIoU: 0.7382 | Val Loss: 0.0603 | Val mIoU: 0.7568 | LR: 0.004200
+[2026-11-12 19:49:51] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7568) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:50:24] Epoch [006/025] | Train Loss: 0.0584 | Train mIoU: 0.7480 | Val Loss: 0.0586 | Val mIoU: 0.7588 | LR: 0.004000
+[2026-11-12 19:50:24] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7588) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:50:56] Epoch [007/025] | Train Loss: 0.0547 | Train mIoU: 0.7526 | Val Loss: 0.0584 | Val mIoU: 0.7607 | LR: 0.003800
+[2026-11-12 19:50:56] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7607) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:51:28] Epoch [008/025] | Train Loss: 0.0541 | Train mIoU: 0.7581 | Val Loss: 0.0614 | Val mIoU: 0.7581 | LR: 0.003600
+[2026-11-12 19:52:01] Epoch [009/025] | Train Loss: 0.0516 | Train mIoU: 0.7630 | Val Loss: 0.0617 | Val mIoU: 0.7617 | LR: 0.003400
+[2026-11-12 19:52:01] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7617) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:52:33] Epoch [010/025] | Train Loss: 0.0503 | Train mIoU: 0.7605 | Val Loss: 0.0585 | Val mIoU: 0.7630 | LR: 0.003200
+[2026-11-12 19:52:33] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7630) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:53:05] Epoch [011/025] | Train Loss: 0.0494 | Train mIoU: 0.7711 | Val Loss: 0.0636 | Val mIoU: 0.7568 | LR: 0.003000
+[2026-11-12 19:53:38] Epoch [012/025] | Train Loss: 0.0489 | Train mIoU: 0.7698 | Val Loss: 0.0567 | Val mIoU: 0.7648 | LR: 0.002800
+[2026-11-12 19:53:38] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7648) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:54:10] Epoch [013/025] | Train Loss: 0.0472 | Train mIoU: 0.7744 | Val Loss: 0.0583 | Val mIoU: 0.7636 | LR: 0.002600
+[2026-11-12 19:54:42] Epoch [014/025] | Train Loss: 0.0474 | Train mIoU: 0.7749 | Val Loss: 0.0581 | Val mIoU: 0.7625 | LR: 0.002400
+[2026-11-12 19:55:15] Epoch [015/025] | Train Loss: 0.0468 | Train mIoU: 0.7751 | Val Loss: 0.0564 | Val mIoU: 0.7661 | LR: 0.002200
+[2026-11-12 19:55:15] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7661) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:55:48] Epoch [016/025] | Train Loss: 0.0461 | Train mIoU: 0.7733 | Val Loss: 0.0588 | Val mIoU: 0.7643 | LR: 0.002000
+[2026-11-12 19:56:21] Epoch [017/025] | Train Loss: 0.0457 | Train mIoU: 0.7787 | Val Loss: 0.0595 | Val mIoU: 0.7649 | LR: 0.001800
+[2026-11-12 19:56:56] Epoch [018/025] | Train Loss: 0.0449 | Train mIoU: 0.7807 | Val Loss: 0.0617 | Val mIoU: 0.7615 | LR: 0.001600
+[2026-11-12 19:57:31] Epoch [019/025] | Train Loss: 0.0455 | Train mIoU: 0.7801 | Val Loss: 0.0571 | Val mIoU: 0.7664 | LR: 0.001400
+[2026-11-12 19:57:31] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7664) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:58:10] Epoch [020/025] | Train Loss: 0.0443 | Train mIoU: 0.7817 | Val Loss: 0.0600 | Val mIoU: 0.7622 | LR: 0.001200
+[2026-11-12 19:58:45] Epoch [021/025] | Train Loss: 0.0435 | Train mIoU: 0.7831 | Val Loss: 0.0588 | Val mIoU: 0.7648 | LR: 0.001000
+[2026-11-12 19:59:19] Epoch [022/025] | Train Loss: 0.0446 | Train mIoU: 0.7828 | Val Loss: 0.0572 | Val mIoU: 0.7666 | LR: 0.000800
+[2026-11-12 19:59:19] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7666) to ./outputs/new_checkpoints/03_loss_deeplabv3plus_focal_best.pth
+[2026-11-12 19:59:52] Epoch [023/025] | Train Loss: 0.0439 | Train mIoU: 0.7844 | Val Loss: 0.0589 | Val mIoU: 0.7650 | LR: 0.000600
+[2026-11-12 20:00:25] Epoch [024/025] | Train Loss: 0.0438 | Train mIoU: 0.7820 | Val Loss: 0.0592 | Val mIoU: 0.7646 | LR: 0.000400
+[2026-11-12 20:00:59] Epoch [025/025] | Train Loss: 0.0435 | Train mIoU: 0.7860 | Val Loss: 0.0599 | Val mIoU: 0.7642 | LR: 0.000200
+[2026-11-12 20:00:59] Experimental summary successfully saved to: D:\finalprojv3\outputs\new_logs\03_loss_deeplabv3plus_focal_summary.json
+[2026-11-12 20:00:59] Result for deeplabv3plus with focal saved to outputs\new_logs\03_losses_ablation_summary.csv

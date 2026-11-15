@@ -1,0 +1,10 @@
+{
+    "model": "deeplabv3plus",
+    "lambda_ce": 0.75,
+    "lambda_jml": 0.9500000000000001,
+    "best_val_miou": 0.7637,
+    "best_val_dice": 0.8364,
+    "best_val_acc": 0.9513,
+    "best_val_biou": 0.4306,
+    "checkpoint": "./outputs/checkpoints/04_composite_deeplabv3plus_best.pth"
+}

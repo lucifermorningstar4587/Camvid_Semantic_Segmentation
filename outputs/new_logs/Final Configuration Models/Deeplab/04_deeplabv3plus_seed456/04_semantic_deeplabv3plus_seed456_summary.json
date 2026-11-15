@@ -1,0 +1,11 @@
+{
+    "model": "deeplabv3plus",
+    "seed": 456,
+    "lambda_ce": 0.75,
+    "lambda_jml": 0.9500000000000001,
+    "best_val_miou": 0.7823,
+    "best_val_dice": 0.8545,
+    "best_val_acc": 0.9565,
+    "best_val_biou": 0.4023,
+    "checkpoint": "./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth"
+}

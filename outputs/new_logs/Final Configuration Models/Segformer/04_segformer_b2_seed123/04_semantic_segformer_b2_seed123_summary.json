@@ -1,0 +1,11 @@
+{
+    "model": "segformer_b2",
+    "seed": 123,
+    "lambda_ce": 0.65,
+    "lambda_jml": 1.1,
+    "best_val_miou": 0.8178,
+    "best_val_dice": 0.8849,
+    "best_val_acc": 0.9639,
+    "best_val_biou": 0.4815,
+    "checkpoint": "./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth"
+}

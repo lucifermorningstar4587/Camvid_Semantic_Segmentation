@@ -1,0 +1,6 @@
+### Table 8: Multi-Seed Semantic Transfer Validation Summary (Seeds 42, 123, 456)
+
+| model         |   lambda_ce |   lambda_jml |   best_val_miou |   best_val_dice |   best_val_acc |   best_val_biou | checkpoint                                               |
+|:--------------|------------:|-------------:|----------------:|----------------:|---------------:|----------------:|:---------------------------------------------------------|
+| segformer_b2  |        0.65 |         1.1  |          0.8178 |          0.8837 |         0.9651 |          0.4825 | ./outputs/checkpoints/04_semantic_segformer_b2_best.pth  |
+| deeplabv3plus |        0.75 |         0.95 |          0.7796 |          0.8523 |         0.956  |          0.3965 | ./outputs/checkpoints/04_semantic_deeplabv3plus_best.pth |

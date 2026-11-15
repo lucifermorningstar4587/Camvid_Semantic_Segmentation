@@ -1,0 +1,12 @@
+{
+    "segformer_b2": {
+        "optimal_tau": 0.15,
+        "best_val_miou": 0.8182,
+        "improvement_over_baseline": 0.0004
+    },
+    "deeplabv3plus": {
+        "optimal_tau": 0.20,
+        "best_val_miou": 0.7796,
+        "improvement_over_baseline": -0.0382
+    }
+}

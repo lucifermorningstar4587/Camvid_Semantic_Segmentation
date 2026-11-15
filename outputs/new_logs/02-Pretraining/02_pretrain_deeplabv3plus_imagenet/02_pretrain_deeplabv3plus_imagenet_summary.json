@@ -1,0 +1,9 @@
+{
+    "model": "deeplabv3plus",
+    "pretraining": "imagenet",
+    "best_val_miou": 0.6911,
+    "best_val_dice": 0.7773,
+    "best_val_acc": 0.9335,
+    "best_val_biou": 0.2613,
+    "checkpoint": "./outputs/new_checkpoints/02_pretrain_deeplabv3plus_imagenet_best.pth"
+}

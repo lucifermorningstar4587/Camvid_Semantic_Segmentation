@@ -1,0 +1,7 @@
+[2026-11-14 02:57:12] === Experiment Log Initialized: 05_improvement_val_stage_1 | 2026-11-14 02:57:12 ===
+[2026-11-14 02:57:15] [SEGFORMER_B2 | Seed 42] Evaluating Stage 1: Baseline Composite Loss on VAL...
+[2026-11-14 02:57:23]   --> [PROGRESSIVE] 1. Baseline Composite Loss (val) | mIoU: 0.8178 | Dice/F1: 0.8837 | Precision: 0.8961 | Recall: 0.8792 | Pixel Acc: 0.9651 | Boundary IoU: 0.4825
+[2026-11-14 02:57:23] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv
+[2026-11-14 02:57:23] [DEEPLABV3PLUS | Seed 42] Evaluating Stage 1: Baseline Composite Loss on VAL...
+[2026-11-14 02:57:29]   --> [PROGRESSIVE] 1. Baseline Composite Loss (val) | mIoU: 0.7796 | Dice/F1: 0.8523 | Precision: 0.8577 | Recall: 0.8551 | Pixel Acc: 0.9560 | Boundary IoU: 0.3965
+[2026-11-14 02:57:29] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv

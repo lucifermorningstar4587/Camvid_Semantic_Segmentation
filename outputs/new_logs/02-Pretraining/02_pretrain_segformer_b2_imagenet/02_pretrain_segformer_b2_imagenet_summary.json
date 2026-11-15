@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "pretraining": "imagenet",
+    "best_val_miou": 0.7745,
+    "best_val_dice": 0.8455,
+    "best_val_acc": 0.9574,
+    "best_val_biou": 0.4168,
+    "checkpoint": "./outputs/new_checkpoints/02_pretrain_segformer_b2_imagenet_best.pth"
+}

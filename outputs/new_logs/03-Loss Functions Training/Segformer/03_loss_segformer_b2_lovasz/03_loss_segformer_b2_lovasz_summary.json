@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "loss": "lovasz",
+    "best_val_miou": 0.8146,
+    "best_val_dice": 0.8808,
+    "best_val_acc": 0.9632,
+    "best_val_biou": 0.4746,
+    "checkpoint": "./outputs/new_checkpoints/03_loss_segformer_b2_lovasz_best.pth"
+}

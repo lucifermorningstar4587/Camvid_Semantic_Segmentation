@@ -1,0 +1,44 @@
+[2026-11-13 22:58:22] === Experiment Log Initialized: 04_semantic_deeplabv3plus_seed456 | 2026-11-13 22:58:22 ===
+[2026-11-13 22:58:22] ======================================================================
+[2026-11-13 22:58:22] Training DEEPLABV3PLUS [Seed 456] with 100% Semantic Transfer using Agent Weights (04_agent_weights_deeplab.json): 0.75*CE + 0.9500000000000001*JML (25 epochs)
+[2026-11-13 22:58:22] ======================================================================
+[2026-11-13 22:58:59] Epoch [001/025] | Train Loss: 0.6345 | Train mIoU: 0.6311 | Val Loss: 0.4834 | Val mIoU: 0.7234 | LR: 0.005000
+[2026-11-13 22:58:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7234) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 22:59:42] Epoch [002/025] | Train Loss: 0.5081 | Train mIoU: 0.7059 | Val Loss: 0.4919 | Val mIoU: 0.7142 | LR: 0.004800
+[2026-11-13 23:00:43] Epoch [003/025] | Train Loss: 0.4639 | Train mIoU: 0.7283 | Val Loss: 0.4410 | Val mIoU: 0.7425 | LR: 0.004600
+[2026-11-13 23:00:43] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7425) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:01:48] Epoch [004/025] | Train Loss: 0.4367 | Train mIoU: 0.7510 | Val Loss: 0.4052 | Val mIoU: 0.7539 | LR: 0.004400
+[2026-11-13 23:01:48] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7539) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:02:48] Epoch [005/025] | Train Loss: 0.4196 | Train mIoU: 0.7579 | Val Loss: 0.4268 | Val mIoU: 0.7438 | LR: 0.004200
+[2026-11-13 23:03:51] Epoch [006/025] | Train Loss: 0.4135 | Train mIoU: 0.7612 | Val Loss: 0.4142 | Val mIoU: 0.7560 | LR: 0.004000
+[2026-11-13 23:03:51] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7560) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:04:54] Epoch [007/025] | Train Loss: 0.4011 | Train mIoU: 0.7693 | Val Loss: 0.3888 | Val mIoU: 0.7657 | LR: 0.003800
+[2026-11-13 23:04:54] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7657) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:05:55] Epoch [008/025] | Train Loss: 0.3960 | Train mIoU: 0.7756 | Val Loss: 0.3926 | Val mIoU: 0.7636 | LR: 0.003600
+[2026-11-13 23:06:59] Epoch [009/025] | Train Loss: 0.3834 | Train mIoU: 0.7816 | Val Loss: 0.3894 | Val mIoU: 0.7674 | LR: 0.003400
+[2026-11-13 23:06:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7674) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:07:34] Epoch [010/025] | Train Loss: 0.3780 | Train mIoU: 0.7861 | Val Loss: 0.3850 | Val mIoU: 0.7709 | LR: 0.003200
+[2026-11-13 23:07:34] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7709) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:08:08] Epoch [011/025] | Train Loss: 0.3671 | Train mIoU: 0.7905 | Val Loss: 0.3894 | Val mIoU: 0.7697 | LR: 0.003000
+[2026-11-13 23:09:04] Epoch [012/025] | Train Loss: 0.3650 | Train mIoU: 0.7889 | Val Loss: 0.3796 | Val mIoU: 0.7710 | LR: 0.002800
+[2026-11-13 23:09:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7710) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:10:04] Epoch [013/025] | Train Loss: 0.3578 | Train mIoU: 0.7928 | Val Loss: 0.3815 | Val mIoU: 0.7718 | LR: 0.002600
+[2026-11-13 23:10:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7718) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:11:06] Epoch [014/025] | Train Loss: 0.3623 | Train mIoU: 0.7928 | Val Loss: 0.3789 | Val mIoU: 0.7728 | LR: 0.002400
+[2026-11-13 23:11:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7728) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:12:06] Epoch [015/025] | Train Loss: 0.3538 | Train mIoU: 0.7966 | Val Loss: 0.3718 | Val mIoU: 0.7765 | LR: 0.002200
+[2026-11-13 23:12:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7765) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:13:06] Epoch [016/025] | Train Loss: 0.3523 | Train mIoU: 0.7984 | Val Loss: 0.3696 | Val mIoU: 0.7793 | LR: 0.002000
+[2026-11-13 23:13:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7793) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:14:06] Epoch [017/025] | Train Loss: 0.3459 | Train mIoU: 0.8005 | Val Loss: 0.3638 | Val mIoU: 0.7801 | LR: 0.001800
+[2026-11-13 23:14:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7801) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:15:08] Epoch [018/025] | Train Loss: 0.3426 | Train mIoU: 0.8051 | Val Loss: 0.3737 | Val mIoU: 0.7756 | LR: 0.001600
+[2026-11-13 23:16:07] Epoch [019/025] | Train Loss: 0.3502 | Train mIoU: 0.8005 | Val Loss: 0.3700 | Val mIoU: 0.7773 | LR: 0.001400
+[2026-11-13 23:17:06] Epoch [020/025] | Train Loss: 0.3427 | Train mIoU: 0.8038 | Val Loss: 0.3675 | Val mIoU: 0.7786 | LR: 0.001200
+[2026-11-13 23:18:05] Epoch [021/025] | Train Loss: 0.3361 | Train mIoU: 0.8081 | Val Loss: 0.3636 | Val mIoU: 0.7795 | LR: 0.001000
+[2026-11-13 23:19:04] Epoch [022/025] | Train Loss: 0.3427 | Train mIoU: 0.8040 | Val Loss: 0.3680 | Val mIoU: 0.7789 | LR: 0.000800
+[2026-11-13 23:20:04] Epoch [023/025] | Train Loss: 0.3374 | Train mIoU: 0.8077 | Val Loss: 0.3612 | Val mIoU: 0.7823 | LR: 0.000600
+[2026-11-13 23:20:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7823) to ./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+[2026-11-13 23:21:02] Epoch [024/025] | Train Loss: 0.3358 | Train mIoU: 0.8069 | Val Loss: 0.3664 | Val mIoU: 0.7793 | LR: 0.000400
+[2026-11-13 23:22:01] Epoch [025/025] | Train Loss: 0.3369 | Train mIoU: 0.8075 | Val Loss: 0.3683 | Val mIoU: 0.7788 | LR: 0.000200
+[2026-11-13 23:22:01] Experimental summary successfully saved to: D:\finalprojv3\outputs\new_logs\04_semantic_deeplabv3plus_seed456_summary.json

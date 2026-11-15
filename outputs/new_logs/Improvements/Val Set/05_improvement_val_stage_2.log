@@ -1,0 +1,7 @@
+[2026-11-14 02:57:44] === Experiment Log Initialized: 05_improvement_val_stage_2 | 2026-11-14 02:57:44 ===
+[2026-11-14 02:57:46] [SEGFORMER_B2 | Seed 42] Evaluating Improvement 2: Native 720x960 Sliding Window on VAL...
+[2026-11-14 02:58:24]   --> [PROGRESSIVE] 2. + Native Sliding Window | mIoU: 0.8497 | Dice/F1: 0.9109 | Precision: 0.9119 | Recall: 0.9118 | Pixel Acc: 0.9692 | Boundary IoU: 0.4270
+[2026-11-14 02:58:24] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv
+[2026-11-14 02:58:24] [DEEPLABV3PLUS | Seed 42] Evaluating Improvement 2: Native 720x960 Sliding Window on VAL...
+[2026-11-14 02:58:42]   --> [PROGRESSIVE] 2. + Native Sliding Window | mIoU: 0.8251 | Dice/F1: 0.8890 | Precision: 0.9078 | Recall: 0.8797 | Pixel Acc: 0.9649 | Boundary IoU: 0.3839
+[2026-11-14 02:58:42] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_val_steps.csv

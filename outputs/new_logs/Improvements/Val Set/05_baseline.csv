@@ -1,0 +1,7 @@
+model,seed,lambda_ce,lambda_jml,best_val_miou,best_val_dice,best_val_acc,best_val_biou,checkpoint
+deeplabv3plus,42,0.75,0.95,0.7796,0.8523,0.956,0.3965,./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed42_best.pth
+segformer_b2,42,0.65,1.1,0.8178,0.8837,0.9651,0.4825,./outputs/new_checkpoints/04_semantic_segformer_b2_seed42_best.pth
+deeplabv3plus,123,0.75,0.95,0.7817,0.8544,0.9562,0.402,./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed123_best.pth
+segformer_b2,123,0.65,1.1,0.8178,0.8849,0.9639,0.4815,./outputs/new_checkpoints/04_semantic_segformer_b2_seed123_best.pth
+deeplabv3plus,456,0.75,0.9500000000000001,0.7823,0.8545,0.9565,0.4023,./outputs/new_checkpoints/04_semantic_deeplabv3plus_seed456_best.pth
+segformer_b2,456,0.65,1.1,0.8152,0.8815,0.9641,0.4804,./outputs/new_checkpoints/04_semantic_segformer_b2_seed456_best.pth

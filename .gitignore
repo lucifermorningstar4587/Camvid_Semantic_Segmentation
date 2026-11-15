@@ -1,0 +1,31 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Jupyter Checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Datasets
+data/CamVid/
+data/dataset/
+
+# Heavy Model Checkpoints (>100MB, PyTorch binary weights)
+*.pth
+*.pt
+*.onnx
+outputs/*checkpoints/
+outputs/**/checkpoints/
+
+# Duplicate notebooks & reference PDFs
+*- Copy.ipynb
+*.pdf
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

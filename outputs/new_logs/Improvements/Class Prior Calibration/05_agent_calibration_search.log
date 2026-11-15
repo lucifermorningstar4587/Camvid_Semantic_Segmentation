@@ -1,0 +1,31 @@
+[2026-11-14 03:02:34] === Experiment Log Initialized: 05_agent_calibration_search | 2026-11-14 03:02:34 ===
+[2026-11-14 03:02:34] === Initializing Calibration Threshold Search Agent on CamVid Validation Set ===
+[2026-11-14 03:02:39] 
+--- [AGENT SEARCH] Collecting Base Validation Logits for SEGFORMER_B2 ---
+[2026-11-14 03:02:52] Cached 101 validation logits for segformer_b2. Starting grid evaluation...
+[2026-11-14 03:02:54]   Trial 01 | tau=0.00 | Val mIoU: 0.8178 | Pedestrian: 70.74% | Bicyclist: 86.18% | * BEST *
+[2026-11-14 03:02:55]   Trial 02 | tau=0.05 | Val mIoU: 0.8181 | Pedestrian: 70.62% | Bicyclist: 86.14% | * BEST *
+[2026-11-14 03:02:57]   Trial 03 | tau=0.10 | Val mIoU: 0.8181 | Pedestrian: 70.43% | Bicyclist: 86.08% | 
+[2026-11-14 03:02:58]   Trial 04 | tau=0.15 | Val mIoU: 0.8182 | Pedestrian: 70.25% | Bicyclist: 86.01% | * BEST *
+[2026-11-14 03:03:00]   Trial 05 | tau=0.20 | Val mIoU: 0.8181 | Pedestrian: 70.03% | Bicyclist: 85.89% | 
+[2026-11-14 03:03:01]   Trial 06 | tau=0.25 | Val mIoU: 0.8179 | Pedestrian: 69.80% | Bicyclist: 85.79% | 
+[2026-11-14 03:03:02]   Trial 07 | tau=0.30 | Val mIoU: 0.8176 | Pedestrian: 69.56% | Bicyclist: 85.64% | 
+[2026-11-14 03:03:04]   Trial 08 | tau=0.35 | Val mIoU: 0.8173 | Pedestrian: 69.29% | Bicyclist: 85.49% | 
+[2026-11-14 03:03:05]   Trial 09 | tau=0.40 | Val mIoU: 0.8168 | Pedestrian: 69.01% | Bicyclist: 85.31% | 
+[2026-11-14 03:03:05] --> [SEGFORMER_B2] Optimal tau* = 0.15 (Peak Val mIoU: 0.8182)
+[2026-11-14 03:03:05] 
+--- [AGENT SEARCH] Collecting Base Validation Logits for DEEPLABV3PLUS ---
+[2026-11-14 03:03:13] Cached 101 validation logits for deeplabv3plus. Starting grid evaluation...
+[2026-11-14 03:03:17]   Trial 01 | tau=0.00 | Val mIoU: 0.7759 | Pedestrian: 65.91% | Bicyclist: 82.99% | * BEST *
+[2026-11-14 03:03:20]   Trial 02 | tau=0.05 | Val mIoU: 0.7789 | Pedestrian: 65.61% | Bicyclist: 82.77% | 
+[2026-11-14 03:03:24]   Trial 03 | tau=0.10 | Val mIoU: 0.7780 | Pedestrian: 65.27% | Bicyclist: 82.50% | 
+[2026-11-14 03:03:27]   Trial 04 | tau=0.15 | Val mIoU: 0.7770 | Pedestrian: 64.95% | Bicyclist: 82.21% | 
+[2026-11-14 03:03:29]   Trial 05 | tau=0.20 | Val mIoU: 0.7796 | Pedestrian: 64.59% | Bicyclist: 81.86% | 
+[2026-11-14 03:03:31]   Trial 06 | tau=0.25 | Val mIoU: 0.7747 | Pedestrian: 64.21% | Bicyclist: 81.51% | 
+[2026-11-14 03:03:33]   Trial 07 | tau=0.30 | Val mIoU: 0.7733 | Pedestrian: 63.82% | Bicyclist: 81.12% | 
+[2026-11-14 03:03:35]   Trial 08 | tau=0.35 | Val mIoU: 0.7717 | Pedestrian: 63.43% | Bicyclist: 80.68% | 
+[2026-11-14 03:03:38]   Trial 09 | tau=0.40 | Val mIoU: 0.7700 | Pedestrian: 63.02% | Bicyclist: 80.22% | 
+[2026-11-14 03:03:38] --> [DEEPLABV3PLUS] Optimal tau* = 0.20 (Peak Val mIoU: 0.7796)
+[2026-11-14 03:03:38] 
+All agent trials saved to: outputs\new_logs\05_agent_trials_calibration.csv
+[2026-11-14 03:03:38] Best configuration saved to: outputs\new_logs\05_calibration_agent_weights.json

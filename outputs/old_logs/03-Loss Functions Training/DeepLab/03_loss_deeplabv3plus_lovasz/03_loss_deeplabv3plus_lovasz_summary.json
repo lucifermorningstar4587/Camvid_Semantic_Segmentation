@@ -1,0 +1,9 @@
+{
+    "model": "deeplabv3plus",
+    "loss": "lovasz",
+    "best_val_miou": 0.7569,
+    "best_val_dice": 0.8337,
+    "best_val_acc": 0.9502,
+    "best_val_biou": 0.4132,
+    "checkpoint": "./outputs/checkpoints/03_loss_deeplabv3plus_lovasz_best.pth"
+}

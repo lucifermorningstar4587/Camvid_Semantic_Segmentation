@@ -1,0 +1,47 @@
+[2026-11-10 21:46:40] === Experiment Log Initialized: 02_pretrain_segformer_b2_imagenet | 2026-11-10 21:46:40 ===
+[2026-11-10 21:46:40] ===========================================================
+[2026-11-10 21:46:40] Starting Pretraining Ablation: SEGFORMER_B2 with IMAGENET weights (1 epochs)
+[2026-11-10 21:46:40] ===========================================================
+[2026-11-10 22:05:45] === Experiment Log Initialized: 02_pretrain_segformer_b2_imagenet | 2026-11-10 22:05:45 ===
+[2026-11-10 22:05:45] ===========================================================
+[2026-11-10 22:05:45] Starting Pretraining Ablation: SEGFORMER_B2 with IMAGENET weights (25 epochs)
+[2026-11-10 22:05:45] ===========================================================
+[2026-11-10 22:06:35] Epoch [001/025] | Train Loss: 0.4837 | Train mIoU: 0.4451 | Val Loss: 0.2262 | Val mIoU: 0.6030 | LR: 0.000100
+[2026-11-10 22:06:35] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6030) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:07:27] Epoch [002/025] | Train Loss: 0.2308 | Train mIoU: 0.6291 | Val Loss: 0.1743 | Val mIoU: 0.6910 | LR: 0.000100
+[2026-11-10 22:07:27] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6910) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:08:18] Epoch [003/025] | Train Loss: 0.1852 | Train mIoU: 0.6804 | Val Loss: 0.1559 | Val mIoU: 0.7236 | LR: 0.000098
+[2026-11-10 22:08:18] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7236) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:09:06] Epoch [004/025] | Train Loss: 0.1659 | Train mIoU: 0.7061 | Val Loss: 0.1470 | Val mIoU: 0.7268 | LR: 0.000097
+[2026-11-10 22:09:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7268) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:09:59] Epoch [005/025] | Train Loss: 0.1502 | Train mIoU: 0.7203 | Val Loss: 0.1397 | Val mIoU: 0.7304 | LR: 0.000094
+[2026-11-10 22:09:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7304) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:10:55] Epoch [006/025] | Train Loss: 0.1414 | Train mIoU: 0.7427 | Val Loss: 0.1533 | Val mIoU: 0.7335 | LR: 0.000091
+[2026-11-10 22:10:55] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7335) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:11:50] Epoch [007/025] | Train Loss: 0.1324 | Train mIoU: 0.7541 | Val Loss: 0.1587 | Val mIoU: 0.7405 | LR: 0.000087
+[2026-11-10 22:11:50] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7405) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:12:37] Epoch [008/025] | Train Loss: 0.1252 | Train mIoU: 0.7624 | Val Loss: 0.1429 | Val mIoU: 0.7482 | LR: 0.000082
+[2026-11-10 22:12:37] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7482) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:13:31] Epoch [009/025] | Train Loss: 0.1188 | Train mIoU: 0.7737 | Val Loss: 0.1278 | Val mIoU: 0.7694 | LR: 0.000077
+[2026-11-10 22:13:31] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7694) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:14:22] Epoch [010/025] | Train Loss: 0.1136 | Train mIoU: 0.7800 | Val Loss: 0.1347 | Val mIoU: 0.7615 | LR: 0.000072
+[2026-11-10 22:15:15] Epoch [011/025] | Train Loss: 0.1104 | Train mIoU: 0.7851 | Val Loss: 0.1310 | Val mIoU: 0.7657 | LR: 0.000066
+[2026-11-10 22:16:08] Epoch [012/025] | Train Loss: 0.1062 | Train mIoU: 0.7922 | Val Loss: 0.1237 | Val mIoU: 0.7750 | LR: 0.000060
+[2026-11-10 22:16:08] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7750) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:17:01] Epoch [013/025] | Train Loss: 0.1036 | Train mIoU: 0.7979 | Val Loss: 0.1278 | Val mIoU: 0.7699 | LR: 0.000054
+[2026-11-10 22:17:54] Epoch [014/025] | Train Loss: 0.1027 | Train mIoU: 0.7990 | Val Loss: 0.1267 | Val mIoU: 0.7684 | LR: 0.000047
+[2026-11-10 22:18:47] Epoch [015/025] | Train Loss: 0.0994 | Train mIoU: 0.8021 | Val Loss: 0.1318 | Val mIoU: 0.7679 | LR: 0.000041
+[2026-11-10 22:19:40] Epoch [016/025] | Train Loss: 0.0981 | Train mIoU: 0.8055 | Val Loss: 0.1256 | Val mIoU: 0.7715 | LR: 0.000035
+[2026-11-10 22:20:34] Epoch [017/025] | Train Loss: 0.0959 | Train mIoU: 0.8062 | Val Loss: 0.1247 | Val mIoU: 0.7724 | LR: 0.000029
+[2026-11-10 22:21:27] Epoch [018/025] | Train Loss: 0.0943 | Train mIoU: 0.8113 | Val Loss: 0.1260 | Val mIoU: 0.7726 | LR: 0.000024
+[2026-11-10 22:22:20] Epoch [019/025] | Train Loss: 0.0936 | Train mIoU: 0.8121 | Val Loss: 0.1254 | Val mIoU: 0.7736 | LR: 0.000019
+[2026-11-10 22:23:13] Epoch [020/025] | Train Loss: 0.0927 | Train mIoU: 0.8138 | Val Loss: 0.1263 | Val mIoU: 0.7758 | LR: 0.000014
+[2026-11-10 22:23:13] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7758) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:24:06] Epoch [021/025] | Train Loss: 0.0914 | Train mIoU: 0.8154 | Val Loss: 0.1256 | Val mIoU: 0.7759 | LR: 0.000010
+[2026-11-10 22:24:06] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7759) to ./outputs/checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+[2026-11-10 22:25:00] Epoch [022/025] | Train Loss: 0.0908 | Train mIoU: 0.8166 | Val Loss: 0.1266 | Val mIoU: 0.7747 | LR: 0.000007
+[2026-11-10 22:25:54] Epoch [023/025] | Train Loss: 0.0904 | Train mIoU: 0.8171 | Val Loss: 0.1260 | Val mIoU: 0.7741 | LR: 0.000004
+[2026-11-10 22:26:47] Epoch [024/025] | Train Loss: 0.0909 | Train mIoU: 0.8170 | Val Loss: 0.1269 | Val mIoU: 0.7745 | LR: 0.000003
+[2026-11-10 22:27:41] Epoch [025/025] | Train Loss: 0.0899 | Train mIoU: 0.8170 | Val Loss: 0.1267 | Val mIoU: 0.7744 | LR: 0.000001
+[2026-11-10 22:27:41] Experimental summary successfully saved to: D:\finalprojv3\outputs\logs\02_pretrain_segformer_b2_imagenet_summary.json
+[2026-11-10 22:27:41] Result for segformer_b2 (imagenet) saved to outputs\logs\02_pretraining_ablation_summary.csv

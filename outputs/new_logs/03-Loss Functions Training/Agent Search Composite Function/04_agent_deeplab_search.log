@@ -1,0 +1,3 @@
+[2026-11-11 14:11:02] === Experiment Log Initialized: 04_agent_deeplab_search | 2026-11-11 14:11:02 ===
+[2026-11-11 14:11:02] Starting DeepLabV3+ Bayesian Loss Search (15 trials, 3 epochs/trial)...
+[2026-11-11 14:24:38] DeepLabV3+ Search Done: lambda_ce=0.75, lambda_jml=0.9500000000000001 (mIoU: 0.6203)

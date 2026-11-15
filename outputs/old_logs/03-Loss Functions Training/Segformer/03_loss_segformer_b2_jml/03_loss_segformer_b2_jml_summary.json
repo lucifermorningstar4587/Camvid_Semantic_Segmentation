@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "loss": "jml",
+    "best_val_miou": 0.7914,
+    "best_val_dice": 0.8632,
+    "best_val_acc": 0.9569,
+    "best_val_biou": 0.4584,
+    "checkpoint": "./outputs/checkpoints/03_loss_segformer_b2_jml_best.pth"
+}

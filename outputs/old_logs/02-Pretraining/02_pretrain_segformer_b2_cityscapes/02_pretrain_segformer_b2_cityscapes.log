@@ -1,0 +1,45 @@
+[2026-11-10 22:49:27] === Experiment Log Initialized: 02_pretrain_segformer_b2_cityscapes | 2026-11-10 22:49:27 ===
+[2026-11-10 22:49:27] ===========================================================
+[2026-11-10 22:49:27] Starting Pretraining Ablation: SEGFORMER_B2 with CITYSCAPES weights (25 epochs)
+[2026-11-10 22:49:27] ===========================================================
+[2026-11-10 22:50:05] Epoch [001/025] | Train Loss: 0.8963 | Train mIoU: 0.3705 | Val Loss: 0.3868 | Val mIoU: 0.4499 | LR: 0.000100
+[2026-11-10 22:50:05] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.4499) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:50:47] Epoch [002/025] | Train Loss: 0.3266 | Train mIoU: 0.4821 | Val Loss: 0.2768 | Val mIoU: 0.5237 | LR: 0.000100
+[2026-11-10 22:50:47] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.5237) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:51:24] Epoch [003/025] | Train Loss: 0.2482 | Train mIoU: 0.5636 | Val Loss: 0.2302 | Val mIoU: 0.6124 | LR: 0.000098
+[2026-11-10 22:51:24] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6124) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:52:10] Epoch [004/025] | Train Loss: 0.2083 | Train mIoU: 0.6217 | Val Loss: 0.1842 | Val mIoU: 0.6556 | LR: 0.000097
+[2026-11-10 22:52:10] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6556) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:53:04] Epoch [005/025] | Train Loss: 0.1831 | Train mIoU: 0.6808 | Val Loss: 0.1566 | Val mIoU: 0.7245 | LR: 0.000094
+[2026-11-10 22:53:04] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7245) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:53:56] Epoch [006/025] | Train Loss: 0.1627 | Train mIoU: 0.7196 | Val Loss: 0.1495 | Val mIoU: 0.7486 | LR: 0.000091
+[2026-11-10 22:53:56] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7486) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:54:42] Epoch [007/025] | Train Loss: 0.1501 | Train mIoU: 0.7337 | Val Loss: 0.1477 | Val mIoU: 0.7453 | LR: 0.000087
+[2026-11-10 22:55:29] Epoch [008/025] | Train Loss: 0.1430 | Train mIoU: 0.7433 | Val Loss: 0.1627 | Val mIoU: 0.7039 | LR: 0.000082
+[2026-11-10 22:56:16] Epoch [009/025] | Train Loss: 0.1362 | Train mIoU: 0.7494 | Val Loss: 0.1462 | Val mIoU: 0.7546 | LR: 0.000077
+[2026-11-10 22:56:16] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7546) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:57:08] Epoch [010/025] | Train Loss: 0.1296 | Train mIoU: 0.7637 | Val Loss: 0.1352 | Val mIoU: 0.7640 | LR: 0.000072
+[2026-11-10 22:57:08] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7640) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:58:01] Epoch [011/025] | Train Loss: 0.1244 | Train mIoU: 0.7694 | Val Loss: 0.1340 | Val mIoU: 0.7645 | LR: 0.000066
+[2026-11-10 22:58:01] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7645) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:58:56] Epoch [012/025] | Train Loss: 0.1207 | Train mIoU: 0.7752 | Val Loss: 0.1350 | Val mIoU: 0.7673 | LR: 0.000060
+[2026-11-10 22:58:56] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7673) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 22:59:50] Epoch [013/025] | Train Loss: 0.1178 | Train mIoU: 0.7773 | Val Loss: 0.1374 | Val mIoU: 0.7635 | LR: 0.000054
+[2026-11-10 23:00:39] Epoch [014/025] | Train Loss: 0.1137 | Train mIoU: 0.7827 | Val Loss: 0.1298 | Val mIoU: 0.7666 | LR: 0.000047
+[2026-11-10 23:01:31] Epoch [015/025] | Train Loss: 0.1117 | Train mIoU: 0.7862 | Val Loss: 0.1304 | Val mIoU: 0.7731 | LR: 0.000041
+[2026-11-10 23:01:31] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7731) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 23:02:22] Epoch [016/025] | Train Loss: 0.1102 | Train mIoU: 0.7891 | Val Loss: 0.1256 | Val mIoU: 0.7774 | LR: 0.000035
+[2026-11-10 23:02:22] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7774) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 23:03:14] Epoch [017/025] | Train Loss: 0.1081 | Train mIoU: 0.7917 | Val Loss: 0.1330 | Val mIoU: 0.7734 | LR: 0.000029
+[2026-11-10 23:04:03] Epoch [018/025] | Train Loss: 0.1064 | Train mIoU: 0.7934 | Val Loss: 0.1277 | Val mIoU: 0.7784 | LR: 0.000024
+[2026-11-10 23:04:03] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7784) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 23:04:54] Epoch [019/025] | Train Loss: 0.1040 | Train mIoU: 0.7989 | Val Loss: 0.1282 | Val mIoU: 0.7737 | LR: 0.000019
+[2026-11-10 23:05:44] Epoch [020/025] | Train Loss: 0.1052 | Train mIoU: 0.7971 | Val Loss: 0.1295 | Val mIoU: 0.7753 | LR: 0.000014
+[2026-11-10 23:06:35] Epoch [021/025] | Train Loss: 0.1034 | Train mIoU: 0.7981 | Val Loss: 0.1253 | Val mIoU: 0.7802 | LR: 0.000010
+[2026-11-10 23:06:35] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7802) to ./outputs/checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth
+[2026-11-10 23:07:25] Epoch [022/025] | Train Loss: 0.1025 | Train mIoU: 0.8010 | Val Loss: 0.1271 | Val mIoU: 0.7782 | LR: 0.000007
+[2026-11-10 23:08:16] Epoch [023/025] | Train Loss: 0.1028 | Train mIoU: 0.8007 | Val Loss: 0.1281 | Val mIoU: 0.7784 | LR: 0.000004
+[2026-11-10 23:09:07] Epoch [024/025] | Train Loss: 0.1024 | Train mIoU: 0.7992 | Val Loss: 0.1275 | Val mIoU: 0.7794 | LR: 0.000003
+[2026-11-10 23:09:53] Epoch [025/025] | Train Loss: 0.1026 | Train mIoU: 0.7996 | Val Loss: 0.1260 | Val mIoU: 0.7800 | LR: 0.000001
+[2026-11-10 23:09:53] Experimental summary successfully saved to: D:\finalprojv3\outputs\logs\02_pretrain_segformer_b2_cityscapes_summary.json
+[2026-11-10 23:09:53] Result for segformer_b2 (cityscapes) saved to outputs\logs\02_pretraining_ablation_summary.csv

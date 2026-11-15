@@ -1,0 +1,43 @@
+[2026-11-11 19:59:51] === Experiment Log Initialized: 04_composite_segformer_b2 | 2026-11-11 19:59:51 ===
+[2026-11-11 19:59:51] ===========================================================
+[2026-11-11 19:59:51] Training SEGFORMER_B2 with Composite Loss (Loaded from 04_agent_weights_segformer.json): 0.65*CE + 1.1*JML (25 epochs)
+[2026-11-11 19:59:51] ===========================================================
+[2026-11-11 20:00:52] Epoch [001/025] | Train Loss: 1.4528 | Train mIoU: 0.3521 | Val Loss: 0.9620 | Val mIoU: 0.4476 | LR: 0.000100
+[2026-11-11 20:00:52] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.4476) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:01:51] Epoch [002/025] | Train Loss: 0.8703 | Train mIoU: 0.4695 | Val Loss: 0.7735 | Val mIoU: 0.5388 | LR: 0.000100
+[2026-11-11 20:01:51] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.5388) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:02:50] Epoch [003/025] | Train Loss: 0.7356 | Train mIoU: 0.5729 | Val Loss: 0.6719 | Val mIoU: 0.5969 | LR: 0.000098
+[2026-11-11 20:02:50] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.5969) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:03:46] Epoch [004/025] | Train Loss: 0.6426 | Train mIoU: 0.6279 | Val Loss: 0.5789 | Val mIoU: 0.6687 | LR: 0.000097
+[2026-11-11 20:03:46] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.6687) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:04:43] Epoch [005/025] | Train Loss: 0.5582 | Train mIoU: 0.7048 | Val Loss: 0.4834 | Val mIoU: 0.7308 | LR: 0.000094
+[2026-11-11 20:04:43] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7308) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:05:40] Epoch [006/025] | Train Loss: 0.5163 | Train mIoU: 0.7260 | Val Loss: 0.4293 | Val mIoU: 0.7638 | LR: 0.000091
+[2026-11-11 20:05:40] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7638) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:06:36] Epoch [007/025] | Train Loss: 0.4782 | Train mIoU: 0.7501 | Val Loss: 0.4139 | Val mIoU: 0.7714 | LR: 0.000087
+[2026-11-11 20:06:36] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7714) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:07:32] Epoch [008/025] | Train Loss: 0.4460 | Train mIoU: 0.7651 | Val Loss: 0.3984 | Val mIoU: 0.7767 | LR: 0.000082
+[2026-11-11 20:07:32] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7767) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:08:28] Epoch [009/025] | Train Loss: 0.4308 | Train mIoU: 0.7742 | Val Loss: 0.4134 | Val mIoU: 0.7705 | LR: 0.000077
+[2026-11-11 20:09:25] Epoch [010/025] | Train Loss: 0.4089 | Train mIoU: 0.7822 | Val Loss: 0.3988 | Val mIoU: 0.7742 | LR: 0.000072
+[2026-11-11 20:10:23] Epoch [011/025] | Train Loss: 0.3988 | Train mIoU: 0.7900 | Val Loss: 0.3849 | Val mIoU: 0.7844 | LR: 0.000066
+[2026-11-11 20:10:23] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7844) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:11:20] Epoch [012/025] | Train Loss: 0.3873 | Train mIoU: 0.7944 | Val Loss: 0.3829 | Val mIoU: 0.7851 | LR: 0.000060
+[2026-11-11 20:11:20] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7851) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:12:13] Epoch [013/025] | Train Loss: 0.3802 | Train mIoU: 0.8003 | Val Loss: 0.3777 | Val mIoU: 0.7876 | LR: 0.000054
+[2026-11-11 20:12:13] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7876) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:13:09] Epoch [014/025] | Train Loss: 0.3695 | Train mIoU: 0.8024 | Val Loss: 0.3803 | Val mIoU: 0.7860 | LR: 0.000047
+[2026-11-11 20:14:05] Epoch [015/025] | Train Loss: 0.3600 | Train mIoU: 0.8096 | Val Loss: 0.3871 | Val mIoU: 0.7818 | LR: 0.000041
+[2026-11-11 20:15:02] Epoch [016/025] | Train Loss: 0.3571 | Train mIoU: 0.8117 | Val Loss: 0.3724 | Val mIoU: 0.7899 | LR: 0.000035
+[2026-11-11 20:15:02] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7899) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:15:59] Epoch [017/025] | Train Loss: 0.3591 | Train mIoU: 0.8110 | Val Loss: 0.3646 | Val mIoU: 0.7959 | LR: 0.000029
+[2026-11-11 20:15:59] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7959) to ./outputs/checkpoints/04_composite_segformer_b2_best.pth
+[2026-11-11 20:16:55] Epoch [018/025] | Train Loss: 0.3517 | Train mIoU: 0.8125 | Val Loss: 0.3692 | Val mIoU: 0.7939 | LR: 0.000024
+[2026-11-11 20:17:50] Epoch [019/025] | Train Loss: 0.3454 | Train mIoU: 0.8152 | Val Loss: 0.3680 | Val mIoU: 0.7928 | LR: 0.000019
+[2026-11-11 20:18:46] Epoch [020/025] | Train Loss: 0.3417 | Train mIoU: 0.8176 | Val Loss: 0.3684 | Val mIoU: 0.7936 | LR: 0.000014
+[2026-11-11 20:19:44] Epoch [021/025] | Train Loss: 0.3394 | Train mIoU: 0.8190 | Val Loss: 0.3700 | Val mIoU: 0.7927 | LR: 0.000010
+[2026-11-11 20:20:41] Epoch [022/025] | Train Loss: 0.3429 | Train mIoU: 0.8187 | Val Loss: 0.3715 | Val mIoU: 0.7920 | LR: 0.000007
+[2026-11-11 20:21:37] Epoch [023/025] | Train Loss: 0.3407 | Train mIoU: 0.8198 | Val Loss: 0.3708 | Val mIoU: 0.7921 | LR: 0.000004
+[2026-11-11 20:22:33] Epoch [024/025] | Train Loss: 0.3428 | Train mIoU: 0.8192 | Val Loss: 0.3726 | Val mIoU: 0.7913 | LR: 0.000003
+[2026-11-11 20:23:30] Epoch [025/025] | Train Loss: 0.3401 | Train mIoU: 0.8198 | Val Loss: 0.3708 | Val mIoU: 0.7923 | LR: 0.000001
+[2026-11-11 20:23:30] Experimental summary successfully saved to: D:\finalprojv3\outputs\logs\04_composite_segformer_b2_summary.json

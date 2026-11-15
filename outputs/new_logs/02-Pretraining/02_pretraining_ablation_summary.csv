@@ -1,0 +1,5 @@
+model,pretraining,best_val_miou,best_val_dice,best_val_acc,best_val_biou,checkpoint
+deeplabv3plus,imagenet,0.6911,0.7773,0.9335,0.2613,./outputs/new_checkpoints/02_pretrain_deeplabv3plus_imagenet_best.pth
+segformer_b2,imagenet,0.7745,0.8455,0.9574,0.4168,./outputs/new_checkpoints/02_pretrain_segformer_b2_imagenet_best.pth
+deeplabv3plus,cityscapes,0.777,0.8509,0.9559,0.3981,./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+segformer_b2,cityscapes,0.8047,0.8742,0.9607,0.47,./outputs/new_checkpoints/02_pretrain_segformer_b2_cityscapes_best.pth

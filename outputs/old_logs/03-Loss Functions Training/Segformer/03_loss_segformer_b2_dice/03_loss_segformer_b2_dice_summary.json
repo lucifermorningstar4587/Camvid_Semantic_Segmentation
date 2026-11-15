@@ -1,0 +1,9 @@
+{
+    "model": "segformer_b2",
+    "loss": "dice",
+    "best_val_miou": 0.7892,
+    "best_val_dice": 0.8614,
+    "best_val_acc": 0.9568,
+    "best_val_biou": 0.4461,
+    "checkpoint": "./outputs/checkpoints/03_loss_segformer_b2_dice_best.pth"
+}

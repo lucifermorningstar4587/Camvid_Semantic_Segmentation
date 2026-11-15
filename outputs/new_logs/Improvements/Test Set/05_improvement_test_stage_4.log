@@ -1,0 +1,19 @@
+[2026-11-14 01:12:13] === Experiment Log Initialized: 05_improvement_test_stage_4 | 2026-11-14 01:12:13 ===
+[2026-11-14 01:12:20] [SEGFORMER_B2 | Seed 42] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 01:24:43]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7859 | Dice/F1: 0.8720 | Precision: 0.8684 | Recall: 0.8762 | Pixel Acc: 0.9436 | Boundary IoU: 0.3977
+[2026-11-14 01:24:43] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 01:24:43] [SEGFORMER_B2 | Seed 123] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 01:37:57]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7855 | Dice/F1: 0.8710 | Precision: 0.8741 | Recall: 0.8693 | Pixel Acc: 0.9449 | Boundary IoU: 0.3982
+[2026-11-14 01:37:57] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 01:37:57] [SEGFORMER_B2 | Seed 456] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 01:50:59]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7915 | Dice/F1: 0.8754 | Precision: 0.8805 | Recall: 0.8721 | Pixel Acc: 0.9462 | Boundary IoU: 0.4003
+[2026-11-14 01:50:59] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 01:50:59] [DEEPLABV3PLUS | Seed 42] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 02:01:00]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7705 | Dice/F1: 0.8607 | Precision: 0.8737 | Recall: 0.8516 | Pixel Acc: 0.9405 | Boundary IoU: 0.3547
+[2026-11-14 02:01:00] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 02:01:00] [DEEPLABV3PLUS | Seed 123] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 02:11:05]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7701 | Dice/F1: 0.8607 | Precision: 0.8697 | Recall: 0.8547 | Pixel Acc: 0.9394 | Boundary IoU: 0.3540
+[2026-11-14 02:11:05] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv
+[2026-11-14 02:11:05] [DEEPLABV3PLUS | Seed 456] Evaluating Improvement 4: Class Prior Calibration on TEST...
+[2026-11-14 02:21:09]   --> [PROGRESSIVE] 4. + Class Prior Calibration (Full Peak Pipeline) | mIoU: 0.7695 | Dice/F1: 0.8603 | Precision: 0.8710 | Recall: 0.8526 | Pixel Acc: 0.9402 | Boundary IoU: 0.3568
+[2026-11-14 02:21:09] Results saved and merged into: ./outputs/new_logs/05_improvements_ablation_test_steps.csv

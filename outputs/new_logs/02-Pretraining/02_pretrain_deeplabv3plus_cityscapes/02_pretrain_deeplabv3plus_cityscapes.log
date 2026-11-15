@@ -1,0 +1,47 @@
+[2026-11-12 12:04:58] === Experiment Log Initialized: 02_pretrain_deeplabv3plus_cityscapes | 2026-11-12 12:04:58 ===
+[2026-11-12 12:04:58] ======================================================================
+[2026-11-12 12:04:58] Starting Pretraining Ablation: DEEPLABV3PLUS with CITYSCAPES weights (25 epochs)
+[2026-11-12 12:04:58] ======================================================================
+[2026-11-12 12:04:59] [Optimizer] DeepLabV3+ SGD: lr=0.005, momentum=0.9, PolynomialLR(power=1.0)
+[2026-11-12 12:05:31] Epoch [001/025] | Train Loss: 0.2739 | Train mIoU: 0.6227 | Val Loss: 0.1712 | Val mIoU: 0.7127 | LR: 0.005000
+[2026-11-12 12:05:31] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7127) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:06:03] Epoch [002/025] | Train Loss: 0.1839 | Train mIoU: 0.6913 | Val Loss: 0.1498 | Val mIoU: 0.7373 | LR: 0.004800
+[2026-11-12 12:06:03] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7373) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:06:35] Epoch [003/025] | Train Loss: 0.1595 | Train mIoU: 0.7183 | Val Loss: 0.1468 | Val mIoU: 0.7496 | LR: 0.004600
+[2026-11-12 12:06:35] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7496) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:07:06] Epoch [004/025] | Train Loss: 0.1473 | Train mIoU: 0.7378 | Val Loss: 0.1466 | Val mIoU: 0.7496 | LR: 0.004400
+[2026-11-12 12:07:38] Epoch [005/025] | Train Loss: 0.1392 | Train mIoU: 0.7490 | Val Loss: 0.1391 | Val mIoU: 0.7607 | LR: 0.004200
+[2026-11-12 12:07:38] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7607) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:08:09] Epoch [006/025] | Train Loss: 0.1354 | Train mIoU: 0.7485 | Val Loss: 0.1337 | Val mIoU: 0.7624 | LR: 0.004000
+[2026-11-12 12:08:09] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7624) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:08:41] Epoch [007/025] | Train Loss: 0.1294 | Train mIoU: 0.7579 | Val Loss: 0.1402 | Val mIoU: 0.7617 | LR: 0.003800
+[2026-11-12 12:09:12] Epoch [008/025] | Train Loss: 0.1281 | Train mIoU: 0.7576 | Val Loss: 0.1317 | Val mIoU: 0.7650 | LR: 0.003600
+[2026-11-12 12:09:12] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7650) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:09:44] Epoch [009/025] | Train Loss: 0.1246 | Train mIoU: 0.7705 | Val Loss: 0.1365 | Val mIoU: 0.7650 | LR: 0.003400
+[2026-11-12 12:10:15] Epoch [010/025] | Train Loss: 0.1207 | Train mIoU: 0.7722 | Val Loss: 0.1372 | Val mIoU: 0.7669 | LR: 0.003200
+[2026-11-12 12:10:15] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7669) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:10:47] Epoch [011/025] | Train Loss: 0.1190 | Train mIoU: 0.7784 | Val Loss: 0.1311 | Val mIoU: 0.7721 | LR: 0.003000
+[2026-11-12 12:10:47] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7721) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:11:18] Epoch [012/025] | Train Loss: 0.1177 | Train mIoU: 0.7789 | Val Loss: 0.1327 | Val mIoU: 0.7712 | LR: 0.002800
+[2026-11-12 12:11:50] Epoch [013/025] | Train Loss: 0.1160 | Train mIoU: 0.7817 | Val Loss: 0.1302 | Val mIoU: 0.7731 | LR: 0.002600
+[2026-11-12 12:11:50] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7731) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:12:21] Epoch [014/025] | Train Loss: 0.1125 | Train mIoU: 0.7793 | Val Loss: 0.1342 | Val mIoU: 0.7688 | LR: 0.002400
+[2026-11-12 12:12:52] Epoch [015/025] | Train Loss: 0.1128 | Train mIoU: 0.7837 | Val Loss: 0.1300 | Val mIoU: 0.7741 | LR: 0.002200
+[2026-11-12 12:12:52] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7741) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:13:24] Epoch [016/025] | Train Loss: 0.1104 | Train mIoU: 0.7898 | Val Loss: 0.1291 | Val mIoU: 0.7745 | LR: 0.002000
+[2026-11-12 12:13:24] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7745) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:13:55] Epoch [017/025] | Train Loss: 0.1111 | Train mIoU: 0.7825 | Val Loss: 0.1276 | Val mIoU: 0.7746 | LR: 0.001800
+[2026-11-12 12:13:55] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7746) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:14:27] Epoch [018/025] | Train Loss: 0.1097 | Train mIoU: 0.7917 | Val Loss: 0.1344 | Val mIoU: 0.7743 | LR: 0.001600
+[2026-11-12 12:14:58] Epoch [019/025] | Train Loss: 0.1093 | Train mIoU: 0.7881 | Val Loss: 0.1282 | Val mIoU: 0.7759 | LR: 0.001400
+[2026-11-12 12:14:58] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7759) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:15:30] Epoch [020/025] | Train Loss: 0.1097 | Train mIoU: 0.7910 | Val Loss: 0.1285 | Val mIoU: 0.7760 | LR: 0.001200
+[2026-11-12 12:15:30] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7760) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:16:01] Epoch [021/025] | Train Loss: 0.1085 | Train mIoU: 0.7944 | Val Loss: 0.1300 | Val mIoU: 0.7755 | LR: 0.001000
+[2026-11-12 12:16:33] Epoch [022/025] | Train Loss: 0.1058 | Train mIoU: 0.7940 | Val Loss: 0.1274 | Val mIoU: 0.7770 | LR: 0.000800
+[2026-11-12 12:16:33] --> [CHECKPOINT] New best model saved! (Val mIoU: 0.7770) to ./outputs/new_checkpoints/02_pretrain_deeplabv3plus_cityscapes_best.pth
+[2026-11-12 12:17:04] Epoch [023/025] | Train Loss: 0.1079 | Train mIoU: 0.7933 | Val Loss: 0.1300 | Val mIoU: 0.7759 | LR: 0.000600
+[2026-11-12 12:17:36] Epoch [024/025] | Train Loss: 0.1060 | Train mIoU: 0.7975 | Val Loss: 0.1306 | Val mIoU: 0.7749 | LR: 0.000400
+[2026-11-12 12:18:07] Epoch [025/025] | Train Loss: 0.1073 | Train mIoU: 0.7959 | Val Loss: 0.1295 | Val mIoU: 0.7767 | LR: 0.000200
+[2026-11-12 12:18:07] Experimental summary successfully saved to: D:\finalprojv3\outputs\new_logs\02_pretrain_deeplabv3plus_cityscapes_summary.json
+[2026-11-12 12:18:07] Result for deeplabv3plus (cityscapes) saved to outputs\new_logs\02_pretraining_ablation_summary.csv
